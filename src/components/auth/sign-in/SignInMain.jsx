@@ -16,6 +16,11 @@ import { useNavigation } from "@react-navigation/native";
 import { AuthInput } from "./AuthInput";
 
 const SignInMain = () => {
+    const nav = useNavigation();
+
+    const goSignUp = () => {
+        return nav.navigate("SignUp");
+    };
     return (
         <ScrollView
             contentContainerStyle={{
@@ -38,6 +43,7 @@ const SignInMain = () => {
                 <HStack my={6} alignItems={"center"}>
                     <Text>Don't have an account? </Text>
                     <Button
+                        onPress={goSignUp}
                         variant={"ghost"}
                         p={0}
                         alignItems={"flex-start"}

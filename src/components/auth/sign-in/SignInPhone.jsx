@@ -6,7 +6,7 @@ import { AuthInput } from "./AuthInput";
 const SignInPhone = () => {
     return (
         <VStack p={4} flex={1} justifyContent={"center"} space={4}>
-            <HStack alignItems={"center"} space={2} mb={6}>
+            <HStack alignItems={"center"} space={2} mb={4}>
                 <BackButton />
                 <Heading>Sign in with Phone</Heading>
             </HStack>
