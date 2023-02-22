@@ -7,6 +7,7 @@ const BackButton = () => {
     const nav = useNavigation();
     return (
         <IconButton
+            borderRadius={0}
             colorScheme={"muted"}
             onPress={nav.goBack}
             icon={<Icon as={Ionicons} name={"chevron-back"} />}
