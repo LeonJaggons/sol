@@ -16,7 +16,7 @@ export default function Application() {
 function App() {
     return (
         <NavigationContainer>
-            {true ? <AppStack /> : <AuthStack />}
+            {false ? <AppStack /> : <AuthStack />}
         </NavigationContainer>
     );
 }

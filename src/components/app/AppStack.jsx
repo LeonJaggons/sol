@@ -21,6 +21,7 @@ const AppStack = () => {
         >
             {tabParams.map((tab) => (
                 <Tabs.Screen
+                    key={tab.name.toUpperCase()}
                     {...tab}
                     options={{
                         tabBarIcon: (params) => (
