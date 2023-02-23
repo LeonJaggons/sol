@@ -1,10 +1,11 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { StatusBar } from "expo-status-bar";
-import { Box, Heading, NativeBaseProvider } from "native-base";
-import { StyleSheet, Text, View } from "react-native";
+import { NativeBaseProvider } from "native-base";
+import { LogBox } from "react-native";
 import AppStack from "./src/components/app/AppStack";
 import AuthStack from "./src/components/auth/AuthStack";
+import "./src/firebase/firebase-init.js";
 
+LogBox.ignoreLogs(["AsyncStorage..."]);
 export default function Application() {
     return (
         <NativeBaseProvider>
