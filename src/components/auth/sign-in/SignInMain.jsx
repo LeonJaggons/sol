@@ -15,6 +15,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { AuthInput } from "./AuthInput";
 import { omit } from "lodash";
+import { attemptSignIn } from "../../../firebase/fire-auth";
 
 const SignInMain = () => {
     const nav = useNavigation();
@@ -84,8 +85,10 @@ const SignInForm = () => {
         updateCanSubmit();
     }, [user]);
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         setLoading(true);
+        await attemptSignIn(user);
+        setLoading(false);
     };
     const OrDivider = () => {
         return (
