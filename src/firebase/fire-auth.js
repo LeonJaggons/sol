@@ -8,7 +8,7 @@ import {
     updateDoc,
 } from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { Fire } from "./firebase-init";
+import Fire from "./firebase-init";
 
 export const createNewAccount = async (userInfo) => {
     const userCred = await createUserWithEmailAndPassword(

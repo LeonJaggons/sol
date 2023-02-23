@@ -16,7 +16,9 @@ import { AuthInput } from "../sign-in/AuthInput";
 import { Ionicons } from "react-native-vector-icons";
 import { difference, intersection, omit } from "lodash";
 import * as ImagePicker from "expo-image-picker";
+import { createNewAccount } from "../../../firebase/fire-auth";
 const SignUp = () => {
+    const [loading, setLoading] = useState(false);
     const [user, setUser] = useState({});
     const updateUser = (param, val) => {
         if (!val || val === "") {
@@ -48,12 +50,18 @@ const SignUp = () => {
         const nonMatchKeys = difference(requiredKeys, currUserKeys);
         const allFieldsPopulated = nonMatchKeys.length === 0;
         const passwordMatch = user.password === user.confirmPassword;
-        setCanSubmit(allFieldsPopulated && passwordMatch);
+        setCanSubmit(allFieldsPopulated && passwordMatch && !loading);
+    };
+
+    const handleSignUp = async () => {
+        setLoading(true);
+        await createNewAccount(user);
+        setLoading(false);
     };
 
     useEffect(() => {
         updateCanSubmit();
-    }, [user]);
+    }, [user, loading]);
 
     return (
         <VStack p={4} flex={1} justifyContent={"center"} space={4}>
@@ -88,6 +96,7 @@ const SignUp = () => {
                     size={"lg"}
                     _text={{ fontWeight: "bold" }}
                     isDisabled={!canSubmit}
+                    onPress={handleSignUp}
                 >
                     Continue
                 </Button>
