@@ -3,14 +3,14 @@ import { Box, Heading } from "native-base";
 import { MaterialCommunityIcons } from "react-native-vector-icons";
 import React from "react";
 import Explore from "./explore/Explore";
-
+import Account from "./account/Account";
 const AppStack = () => {
     const Tabs = createBottomTabNavigator();
     const tabParams = [
         { name: "Explore", component: Explore, icon: "compass" },
         { name: "Listings", component: Dummy, icon: "store" },
         { name: "Messages", component: Dummy, icon: "mail" },
-        { name: "Account", component: Dummy, icon: "account" },
+        { name: "Account", component: Account, icon: "account" },
     ];
     return (
         <Tabs.Navigator
