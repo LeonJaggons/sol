@@ -11,9 +11,10 @@ import {
     Center,
 } from "native-base";
 import { Ionicons } from "react-native-vector-icons";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { AuthInput } from "./AuthInput";
+import { omit } from "lodash";
 
 const SignInMain = () => {
     const nav = useNavigation();
@@ -21,6 +22,7 @@ const SignInMain = () => {
     const goSignUp = () => {
         return nav.navigate("SignUp");
     };
+
     return (
         <ScrollView
             contentContainerStyle={{
@@ -64,6 +66,27 @@ const SignInMain = () => {
 };
 
 const SignInForm = () => {
+    const [loading, setLoading] = useState(false);
+    const [user, setUser] = useState({});
+    const updateUser = (param, val) => {
+        if (val === "" || val == null) setUser(omit(user, [param]));
+        else setUser({ ...user, [param]: val });
+    };
+    const setEmail = (e) => updateUser("email", e);
+    const setPassword = (e) => updateUser("password", e);
+
+    const [canSubmit, setCanSubmit] = useState(false);
+    const updateCanSubmit = () => {
+        setCanSubmit(user.email != null && user.password != null && !loading);
+    };
+
+    useEffect(() => {
+        updateCanSubmit();
+    }, [user]);
+
+    const handleSubmit = () => {
+        setLoading(true);
+    };
     const OrDivider = () => {
         return (
             <HStack alignItems={"center"} space={2}>
@@ -77,11 +100,11 @@ const SignInForm = () => {
     };
     return (
         <VStack space={4} w={"full"}>
-            <AuthInput label={"Email"} />
+            <AuthInput label={"Email"} onChangeText={setEmail} />
             <VStack>
                 <AuthInput
+                    onChangeText={setPassword}
                     label={"Password"}
-                    placeholder={"Password "}
                     isPassword
                 />
                 <Button
@@ -104,6 +127,10 @@ const SignInForm = () => {
                 bg={"black"}
                 size={"lg"}
                 _text={{ fontWeight: "bold" }}
+                isDisabled={!canSubmit}
+                isLoading={loading}
+                onPress={handleSubmit}
+                isLoadingText={"Please wait..."}
             >
                 Continue
             </Button>
