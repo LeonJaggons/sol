@@ -3,8 +3,8 @@ import React from "react";
 
 export const AuthInput = ({ label, isPassword, ...props }) => {
     return (
-        <VStack space={1} {...props}>
-            <Heading size={"xs"} fontWeight={800}>
+        <>
+            <Heading size={"xs"} fontWeight={800} mb={1}>
                 {label}
             </Heading>
             <Input
@@ -14,7 +14,8 @@ export const AuthInput = ({ label, isPassword, ...props }) => {
                 borderColor={"transparent"}
                 fontSize={16}
                 _focus={{ borderColor: "muted.800", bg: "white" }}
+                {...props}
             />
-        </VStack>
+        </>
     );
 };
