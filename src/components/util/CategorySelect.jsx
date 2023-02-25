@@ -21,7 +21,7 @@ const CategorySelect = (props) => {
         });
     };
     return (
-        <HStack>
+        <HStack bg={"muted.200"} p={2}>
             <Button
                 flex={1}
                 onPress={handlePress}
@@ -30,11 +30,11 @@ const CategorySelect = (props) => {
                 bg={"transparent"}
                 borderColor={"muted.400"}
                 borderWidth={0}
-                p={1}
+                p={0}
                 size={"lg"}
                 _text={{
                     fontWeight: "semibold",
-                    fontSize: 14,
+                    fontSize: 16,
                 }}
                 variant={"unstyled"}
                 display={"flex"}
@@ -46,11 +46,15 @@ const CategorySelect = (props) => {
                     <Icon
                         as={Ionicons}
                         name={"chevron-down"}
-                        size={"sm"}
+                        size={"18px"}
                         alignItems={"flex-end"}
                         color={"muted.600"}
                     />
-                    <Text color={postCategory ? "black" : "muted.400"}>
+                    <Text
+                        color={postCategory ? "black" : "muted.400"}
+                        fontSize={16}
+                        fontWeight={"medium"}
+                    >
                         {
                             postCategory == null
                                 ? "Select category..."
@@ -65,7 +69,14 @@ const CategorySelect = (props) => {
                 <IconButton
                     size={"sm"}
                     onPress={clearCategory}
-                    icon={<Icon as={Ionicons} name={"close"} />}
+                    icon={
+                        <Icon
+                            as={Ionicons}
+                            name={"close"}
+                            size={"18px"}
+                            color={"muted.600"}
+                        />
+                    }
                     variant={"unstyled"}
                     p={1}
                 />
