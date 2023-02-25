@@ -106,16 +106,9 @@ const ImageDisplay = ({ imgs, add }) => {
                         showsHorizontalScrollIndicator={false}
                     >
                         <HStack space={2}>
-                            {imgs.map(
-                                (img, i) =>
-                                    i !== 0 && (
-                                        <SubImage
-                                            img={img}
-                                            i={i}
-                                            key={img.id}
-                                        />
-                                    )
-                            )}
+                            {imgs.map((img, i) => (
+                                <SubImage img={img} i={i} key={img.id} />
+                            ))}
                         </HStack>
                     </ScrollView>
                 </Box>
