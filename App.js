@@ -30,7 +30,6 @@ function App() {
 
     useEffect(() => {
         handleAccessApp();
-        console.log(user);
     }, [user]);
     return (
         <NavigationContainer>
