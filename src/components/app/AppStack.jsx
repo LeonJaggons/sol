@@ -4,12 +4,16 @@ import { MaterialCommunityIcons } from "react-native-vector-icons";
 import React from "react";
 import Explore from "./explore/Explore";
 import Account from "./account/Account";
+import Post from "./post/Post";
+import { createStackNavigator } from "@react-navigation/stack";
+import CategoriesPanel from "../util/CategoriesPanel";
 const AppStack = () => {
     const Tabs = createBottomTabNavigator();
     const tabParams = [
         { name: "Explore", component: Explore, icon: "compass" },
         { name: "Listings", component: Dummy, icon: "store" },
-        { name: "Messages", component: Dummy, icon: "mail" },
+        { name: "Post", component: Post, icon: "tag" },
+        { name: "Messages", component: Dummy, icon: "email" },
         { name: "Account", component: Account, icon: "account" },
     ];
     return (
@@ -26,7 +30,10 @@ const AppStack = () => {
                     options={{
                         tabBarIcon: (params) => (
                             <MaterialCommunityIcons
-                                name={tab.icon}
+                                name={
+                                    tab.icon +
+                                    (params.focused ? "" : "-outline")
+                                }
                                 {...params}
                             />
                         ),
@@ -37,6 +44,16 @@ const AppStack = () => {
     );
 };
 
+const GlobalStack = () => {
+    const Stack = createStackNavigator();
+    return (
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen name={"APP"} component={AppStack} />
+            <Stack.Screen name={"CATEGORIES"} component={CategoriesPanel} />
+        </Stack.Navigator>
+    );
+};
+
 const Dummy = () => {
     return (
         <Box>
@@ -44,4 +61,4 @@ const Dummy = () => {
         </Box>
     );
 };
-export default AppStack;
+export default GlobalStack;
