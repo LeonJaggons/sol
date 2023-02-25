@@ -103,7 +103,7 @@ const AccountSection = ({ title, items }) => {
                                         size={"18px"}
                                     />
                                 </Box>
-                                <Heading size={"xs"} fontWeight={00}>
+                                <Heading size={"xs"} fontWeight={600}>
                                     {item.label}
                                 </Heading>
                             </HStack>
