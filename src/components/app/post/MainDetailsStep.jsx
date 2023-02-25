@@ -138,8 +138,9 @@ const ZipCodeInput = ({ submit }) => {
             cities,
             (o) => o.zip_code.toString() === currZip
         );
+
         setCity(foundCity);
-        submit(foundCity);
+        if (foundCity) submit(foundCity);
 
         setTimeout(() => {
             setLoading(false);
@@ -173,7 +174,9 @@ const ZipCodeInput = ({ submit }) => {
                         {city.city}, {city.state}
                     </Text>
                 ) : (
-                    <></>
+                    <Text fontWeight={500} fontSize={16} color={"muted.400"}>
+                        No city found
+                    </Text>
                 )}
             </Tag>
         </HStack>
