@@ -4,7 +4,7 @@ import PostStep from "./PostStep";
 import { Center, Checkbox, Input, VStack } from "native-base";
 import SolInput from "../../util/SolInput";
 import { useDispatch, useSelector } from "react-redux";
-import { parseInt, update } from "lodash";
+import { isNumber, parseInt, update } from "lodash";
 
 const PriceStep = () => {
     const postDetails = useSelector((state) => state.post.postDetails);
@@ -32,16 +32,20 @@ const PriceForm = () => {
     const [price, setPrice] = useState();
 
     const handlePriceChange = (e) => {
-        const p = parseInt(e);
-        setPrice("$" + e);
-        dispatch({
-            type: "SET",
-            attr: "postDetails",
-            payload: {
-                ...postDetails,
-                price: p,
-            },
-        });
+        console.log(e);
+        if (!isNaN(e)) {
+            const p = parseInt(e);
+            setPrice(e);
+            console.log(price);
+            dispatch({
+                type: "SET",
+                attr: "postDetails",
+                payload: {
+                    ...postDetails,
+                    price: p,
+                },
+            });
+        }
     };
     return (
         <Center flex={1}>
@@ -53,7 +57,6 @@ const PriceForm = () => {
                     textAlign={"center"}
                     fontSize={32}
                     keyboardType={"number-pad"}
-                    value={price}
                     onChangeText={handlePriceChange}
                 />
             </VStack>
