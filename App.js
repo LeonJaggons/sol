@@ -1,4 +1,5 @@
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, useNavigation } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 import { isEmpty } from "lodash";
 import { NativeBaseProvider } from "native-base";
 import { useEffect, useState } from "react";
@@ -15,25 +16,32 @@ export default function Application() {
     return (
         <NativeBaseProvider>
             <Provider store={store}>
-                <App />
+                <NavigationContainer>
+                    <App />
+                </NavigationContainer>
             </Provider>
         </NativeBaseProvider>
     );
 }
 
 function App() {
+    const Stack = createStackNavigator();
+    const nav = useNavigation();
     const user = useSelector((state) => state.app.user);
-    const [isApp, setIsApp] = useState(false);
+
     const handleAccessApp = () => {
-        setIsApp(user && !isEmpty(user));
+        const isLoggedIn = user && !isEmpty(user);
+        const navDestination = isLoggedIn ? "APPLICATION" : "AUTHENTICATE";
+        nav.navigate(navDestination);
     };
 
     useEffect(() => {
         handleAccessApp();
     }, [user]);
     return (
-        <NavigationContainer>
-            {isApp ? <AppStack /> : <AuthStack />}
-        </NavigationContainer>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen name={"AUTHENTICATE"} component={AuthStack} />
+            <Stack.Screen name={"APPLICATION"} component={AppStack} />
+        </Stack.Navigator>
     );
 }
