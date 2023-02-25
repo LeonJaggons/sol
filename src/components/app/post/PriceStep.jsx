@@ -32,11 +32,9 @@ const PriceForm = () => {
     const [price, setPrice] = useState();
 
     const handlePriceChange = (e) => {
-        console.log(e);
         if (!isNaN(e)) {
             const p = parseInt(e);
             setPrice(e);
-            console.log(price);
             dispatch({
                 type: "SET",
                 attr: "postDetails",

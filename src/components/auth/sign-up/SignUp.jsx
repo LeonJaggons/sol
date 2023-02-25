@@ -9,6 +9,7 @@ import {
     Icon,
     Pressable,
     IconButton,
+    ScrollView,
 } from "native-base";
 import React, { useEffect, useState } from "react";
 import BackButton from "../../util/BackButton";
@@ -64,44 +65,52 @@ const SignUp = () => {
     }, [user, loading]);
 
     return (
-        <VStack p={4} flex={1} justifyContent={"center"} space={4}>
-            <HStack alignItems={"center"} space={2} mb={4}>
-                <BackButton />
-                <Heading>Sign Up</Heading>
-            </HStack>
-            <VStack space={4} w={"full"}>
-                <AddProfileImage update={setImage} />
-                <AuthInput label={"First Name"} onChangeText={setFirstName} />
-                <AuthInput label={"Last Name"} onChangeText={setLastName} />
-                <AuthInput label={"Phone"} onChangeText={setPhone} />
-                <AuthInput label={"Email address"} onChangeText={setEmail} />
-                <HStack w={"full"} space={2}>
-                    <VStack flex={1}>
-                        <AuthInput
-                            label={"Password"}
-                            onChangeText={setPassword}
-                        />
-                    </VStack>
-                    <VStack flex={1}>
-                        <AuthInput
-                            label={"Confirm password"}
-                            onChangeText={setConfirmPassword}
-                        />
-                    </VStack>
+        <ScrollView>
+            <VStack p={4} flex={1} justifyContent={"center"} space={4}>
+                <HStack alignItems={"center"} space={2} mb={4}>
+                    <BackButton />
+                    <Heading>Sign Up</Heading>
                 </HStack>
-                <Button
-                    borderRadius={0}
-                    colorScheme={"muted"}
-                    bg={"black"}
-                    size={"lg"}
-                    _text={{ fontWeight: "bold" }}
-                    isDisabled={!canSubmit}
-                    onPress={handleSignUp}
-                >
-                    Continue
-                </Button>
+                <VStack space={4} w={"full"}>
+                    <AddProfileImage update={setImage} />
+                    <AuthInput
+                        label={"First Name"}
+                        onChangeText={setFirstName}
+                    />
+                    <AuthInput label={"Last Name"} onChangeText={setLastName} />
+                    <AuthInput label={"Phone"} onChangeText={setPhone} />
+                    <AuthInput
+                        label={"Email address"}
+                        onChangeText={setEmail}
+                    />
+                    <HStack w={"full"} space={2}>
+                        <VStack flex={1}>
+                            <AuthInput
+                                label={"Password"}
+                                onChangeText={setPassword}
+                            />
+                        </VStack>
+                        <VStack flex={1}>
+                            <AuthInput
+                                label={"Confirm password"}
+                                onChangeText={setConfirmPassword}
+                            />
+                        </VStack>
+                    </HStack>
+                    <Button
+                        borderRadius={0}
+                        colorScheme={"muted"}
+                        bg={"black"}
+                        size={"lg"}
+                        _text={{ fontWeight: "bold" }}
+                        isDisabled={!canSubmit}
+                        onPress={handleSignUp}
+                    >
+                        Continue
+                    </Button>
+                </VStack>
             </VStack>
-        </VStack>
+        </ScrollView>
     );
 };
 
