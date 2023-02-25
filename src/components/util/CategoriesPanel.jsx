@@ -76,7 +76,7 @@ const CategoryLine = ({ cat, press }) => {
             justifyContent={"flex-start"}
             variant={"ghost"}
             colorScheme={"muted"}
-            _text={{ fontWeight: 500, color: "muted.900", fontSize: 14 }}
+            _text={{ fontWeight: 500, color: "muted.900", fontSize: 15 }}
             leftIcon={
                 cat.icon && (
                     <Icon

@@ -1,6 +1,6 @@
 import React from "react";
 import PostStep from "./PostStep";
-import { Heading, VStack, Text, Tag } from "native-base";
+import { Heading, VStack, Text, Tag, Box } from "native-base";
 import { useSelector } from "react-redux";
 import { ImageDisplay } from "../../util/ImageDisplay";
 import moment from "moment";
@@ -23,13 +23,11 @@ const ReviewForm = () => {
                 <Tag
                     colorScheme={"muted"}
                     variant={"outline"}
-                    _text={{ color: "muted.900" }}
+                    bg={"black"}
+                    _text={{ color: "white", fontSize: 14 }}
                 >
-                    {postDetails.category.join(" > ")}
-                </Tag>
-                {/* <Tag colorScheme={"muted"} variant={"outline"}>
                     {postDetails.category[postDetails.category.length - 1]}
-                </Tag> */}
+                </Tag>
                 <Heading>${postDetails.price}</Heading>
                 <Heading size={"lg"}>{postDetails.title}</Heading>
                 <Text fontWeight={500}>
