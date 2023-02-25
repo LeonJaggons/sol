@@ -50,10 +50,6 @@ const ImageAdder = ({ updateCount }) => {
     };
 
     useEffect(() => {
-        console.log("DETAILS", postDetails);
-    }, [postDetails]);
-
-    useEffect(() => {
         updateCount(imgs.length);
         uploadImages();
     }, [imgs]);
@@ -98,7 +94,7 @@ const LibImageButton = ({ add }) => {
             mediaTypes: ImagePicker.MediaTypeOptions.Images,
             allowsEditing: true,
             aspect: [1, 1],
-            quality: 0.75,
+            quality: 0.55,
         });
         if (!result.canceled) {
             const uriResult = result.assets[0].uri;
