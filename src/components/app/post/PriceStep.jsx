@@ -55,7 +55,7 @@ const PriceForm = () => {
                     placeholder={"$0"}
                     justifyContent={"center"}
                     textAlign={"center"}
-                    fontSize={32}
+                    fontSize={42}
                     keyboardType={"number-pad"}
                     onChangeText={handlePriceChange}
                 />
