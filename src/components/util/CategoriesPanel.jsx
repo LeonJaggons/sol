@@ -13,6 +13,7 @@ import { find } from "lodash";
 import { useDispatch } from "react-redux";
 import { useNavigation } from "@react-navigation/native";
 import { MaterialCommunityIcons } from "react-native-vector-icons";
+import { v4 } from "uuid";
 const categories = require("./ProductCategories.json");
 
 const CategoriesPanel = () => {
@@ -53,7 +54,11 @@ const CategoriesPanel = () => {
             <ScrollView showsVerticalScrollIndicator={false}>
                 <VStack space={1}>
                     {cats.map((cat, i) => (
-                        <CategoryLine cat={cat} press={handleSelect} />
+                        <CategoryLine
+                            key={v4()}
+                            cat={cat}
+                            press={handleSelect}
+                        />
                     ))}
                 </VStack>
             </ScrollView>
