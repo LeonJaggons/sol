@@ -1,7 +1,16 @@
-import { doc, setDoc, Timestamp, updateDoc } from "firebase/firestore";
+import {
+    collection,
+    doc,
+    getDocs,
+    query,
+    setDoc,
+    Timestamp,
+    updateDoc,
+} from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
+import { orderBy } from "lodash";
 import store from "../redux/store";
-import { Fire } from "./firebase-init";
+import Fire from "./firebase-init";
 
 const createItemID = () => {
     let id = "ITEM-";
@@ -12,15 +21,15 @@ const createItemID = () => {
     return id;
 };
 
-export const publishItem = async (userID, itemDetails, images) => {
-    const location = store.getState().app.userLocation;
+export const publishItem = async (userID, itemDetails) => {
+    const images = itemDetails.imgs.map((img) => img.uri);
+    delete itemDetails["imgs"];
     const itemID = createItemID();
     const docRef = doc(Fire.store, "items", itemID);
     await setDoc(docRef, {
         userID: userID,
         ...itemDetails,
         created: Timestamp.now(),
-        location: location,
     });
     const imgs = await uploadItemImgs(userID, itemID, images);
     await updateDoc(docRef, { imgs: imgs });
@@ -40,4 +49,25 @@ export const uploadItemImgs = async (userID, itemID, imgs) => {
         i++;
     }
     return dlURLs;
+};
+
+export const getAllItems = async (includeUser = true) => {
+    const userID = store.getState().app.user.userID;
+    const itemsCol = includeUser
+        ? query(collection(Fire.store, "items"), orderBy("created"))
+        : query(
+              collection(Fire.store, "items"),
+              where("userID", "!=", userID),
+              orderBy("created")
+          );
+    const itemDocs = await getDocs(itemsCol);
+    const items = [
+        ...itemDocs.docs.map((iDoc) => {
+            return {
+                itemID: iDoc.id,
+                ...iDoc.data(),
+            };
+        }),
+    ];
+    return items;
 };
