@@ -4,20 +4,19 @@ import PostStep from "./PostStep";
 import {
     Text,
     Button,
-    HStack,
     Icon,
     Image,
     Pressable,
     Progress,
     VStack,
     Menu,
-    Box,
-    ScrollView,
 } from "native-base";
 import { Ionicons } from "react-native-vector-icons";
 import { v4 } from "uuid";
 
 import * as ImagePicker from "expo-image-picker";
+import { ImageDisplay } from "../../util/ImageDisplay";
+import { useDispatch, useSelector } from "react-redux";
 
 const TitleImgStep = () => {
     const [imgCount, setImgCount] = useState(0);
@@ -33,6 +32,8 @@ const TitleImgStep = () => {
 };
 
 const ImageAdder = ({ updateCount }) => {
+    const dispatch = useDispatch();
+    const postDetails = useSelector((state) => state.post.postDetails);
     const [imgs, setImgs] = useState([]);
     const [hasImgs, setHasImgs] = useState(false);
 
@@ -40,9 +41,23 @@ const ImageAdder = ({ updateCount }) => {
         setImgs([...imgs, { uri: uri, id: v4() }]);
     };
 
+    const uploadImages = () => {
+        dispatch({
+            type: "SET",
+            attr: "postDetails",
+            payload: { ...postDetails, imgs: [...imgs] },
+        });
+    };
+
+    useEffect(() => {
+        console.log("DETAILS", postDetails);
+    }, [postDetails]);
+
     useEffect(() => {
         updateCount(imgs.length);
+        uploadImages();
     }, [imgs]);
+
     return (
         <VStack space={4}>
             <ImageDisplay imgs={imgs} add={addImage} />
@@ -74,67 +89,6 @@ const ImageProgress = ({ imgCount }) => {
                 {imgCount}/6
             </Text>
         </VStack>
-    );
-};
-
-const ImageDisplay = ({ imgs, add }) => {
-    return imgs.length === 0 ? (
-        <></>
-    ) : (
-        <VStack space={1}>
-            <Image
-                w={"100%"}
-                style={{ aspectRatio: 1 }}
-                source={{ uri: imgs[0].uri }}
-                alt={"Main image"}
-                mb={1}
-                key={"MAIN_IMG"}
-            />
-            {imgs.length <= 1 ? (
-                <></>
-            ) : (
-                <Box
-                    position={"absolute"}
-                    bottom={4}
-                    bg={"rgba(0,0,0,.7)"}
-                    p={2}
-                    mx={4}
-                    space={2}
-                >
-                    <ScrollView
-                        horizontal
-                        showsHorizontalScrollIndicator={false}
-                    >
-                        <HStack space={2}>
-                            {imgs.map((img, i) => (
-                                <SubImage img={img} i={i} key={img.id} />
-                            ))}
-                        </HStack>
-                    </ScrollView>
-                </Box>
-            )}
-        </VStack>
-    );
-};
-const SubImage = ({ img, i, full }) => {
-    return (
-        <Menu
-            trigger={(triggerProps) => {
-                return (
-                    <Pressable key={img.id} {...triggerProps}>
-                        <Image
-                            alt={"Image " + i}
-                            source={{ uri: img.uri }}
-                            style={{ aspectRatio: 1 }}
-                            w={full ? "full" : "60px"}
-                        />
-                    </Pressable>
-                );
-            }}
-        >
-            <Menu.Item>Set as cover</Menu.Item>
-            <Menu.Item _text={{ color: "red.500" }}>Remove image</Menu.Item>
-        </Menu>
     );
 };
 
