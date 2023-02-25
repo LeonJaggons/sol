@@ -1,0 +1,4869 @@
+[
+    {
+        "name": "Animals & Pet Supplies",
+        "icon": "paw",
+        "subCategories": [
+            {
+                "name": "Pet Supplies",
+                "subCategories": [
+                    {
+                        "name": "Bird Supplies"
+                    },
+                    {
+                        "name": "Cat Supplies"
+                    },
+                    {
+                        "name": "Dog Supplies"
+                    },
+                    {
+                        "name": "Fish Supplies"
+                    },
+                    {
+                        "name": "Pet Agility Equipment"
+                    },
+                    {
+                        "name": "Pet Apparel Hangers"
+                    },
+                    {
+                        "name": "Pet Bed Accessories"
+                    },
+                    {
+                        "name": "Pet Bells & Charms"
+                    },
+                    {
+                        "name": "Pet Biometric Monitors"
+                    },
+                    {
+                        "name": "Pet Bowl Mats"
+                    },
+                    {
+                        "name": "Pet Bowl Stands"
+                    },
+                    {
+                        "name": "Pet Bowls, Feeders & Waterers"
+                    },
+                    {
+                        "name": "Pet Carrier & Crate Accessories"
+                    },
+                    {
+                        "name": "Pet Carriers & Crates"
+                    },
+                    {
+                        "name": "Pet Collars & Harnesses"
+                    },
+                    {
+                        "name": "Pet Containment Systems"
+                    },
+                    {
+                        "name": "Pet Door Accessories"
+                    },
+                    {
+                        "name": "Pet Doors"
+                    },
+                    {
+                        "name": "Pet Eye Drops & Lubricants"
+                    },
+                    {
+                        "name": "Pet First Aid & Emergency Kits"
+                    },
+                    {
+                        "name": "Pet Flea & Tick Control"
+                    },
+                    {
+                        "name": "Pet Food Containers"
+                    },
+                    {
+                        "name": "Pet Food Scoops"
+                    },
+                    {
+                        "name": "Pet Grooming Supplies"
+                    },
+                    {
+                        "name": "Pet Heating Pad Accessories"
+                    },
+                    {
+                        "name": "Pet Heating Pads"
+                    },
+                    {
+                        "name": "Pet ID Tags"
+                    },
+                    {
+                        "name": "Pet Leash Extensions"
+                    },
+                    {
+                        "name": "Pet Leashes"
+                    },
+                    {
+                        "name": "Pet Medical Collars"
+                    },
+                    {
+                        "name": "Pet Medical Tape & Bandages"
+                    },
+                    {
+                        "name": "Pet Medicine"
+                    },
+                    {
+                        "name": "Pet Muzzles"
+                    },
+                    {
+                        "name": "Pet Oral Care Supplies"
+                    },
+                    {
+                        "name": "Pet Playpens"
+                    },
+                    {
+                        "name": "Pet Steps & Ramps"
+                    },
+                    {
+                        "name": "Pet Strollers"
+                    },
+                    {
+                        "name": "Pet Sunscreen"
+                    },
+                    {
+                        "name": "Pet Training Aids"
+                    },
+                    {
+                        "name": "Pet Vitamins & Supplements"
+                    },
+                    {
+                        "name": "Pet Waste Bag Dispensers & Holders"
+                    },
+                    {
+                        "name": "Pet Waste Bags"
+                    },
+                    {
+                        "name": "Pet Waste Disposal Systems & Tools"
+                    },
+                    {
+                        "name": "Reptile & Amphibian Supplies"
+                    },
+                    {
+                        "name": "Small Animal Supplies"
+                    },
+                    {
+                        "name": "Vehicle Pet Barriers"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Apparel & Accessories",
+        "icon": "tshirt-crew",
+        "subCategories": [
+            {
+                "name": "Clothing",
+                "subCategories": [
+                    {
+                        "name": "Activewear"
+                    },
+                    {
+                        "name": "Baby & Toddler Clothing"
+                    },
+                    {
+                        "name": "Dresses"
+                    },
+                    {
+                        "name": "One-Pieces"
+                    },
+                    {
+                        "name": "Outerwear"
+                    },
+                    {
+                        "name": "Outfit Sets"
+                    },
+                    {
+                        "name": "Pants"
+                    },
+                    {
+                        "name": "Shirts & Tops"
+                    },
+                    {
+                        "name": "Shorts"
+                    },
+                    {
+                        "name": "Skirts"
+                    },
+                    {
+                        "name": "Skorts"
+                    },
+                    {
+                        "name": "Sleepwear & Loungewear"
+                    },
+                    {
+                        "name": "Suits"
+                    },
+                    {
+                        "name": "Swimwear"
+                    },
+                    {
+                        "name": "Traditional & Ceremonial Clothing"
+                    },
+                    {
+                        "name": "Underwear & Socks"
+                    },
+                    {
+                        "name": "Uniforms"
+                    },
+                    {
+                        "name": "Wedding & Bridal Party Dresses"
+                    }
+                ]
+            },
+            {
+                "name": "Clothing Accessories",
+                "subCategories": [
+                    {
+                        "name": "Arm Warmers & Sleeves"
+                    },
+                    {
+                        "name": "Baby & Toddler Clothing Accessories"
+                    },
+                    {
+                        "name": "Balaclavas"
+                    },
+                    {
+                        "name": "Bandanas & Headties"
+                    },
+                    {
+                        "name": "Belt Buckles"
+                    },
+                    {
+                        "name": "Belts"
+                    },
+                    {
+                        "name": "Bridal Accessories"
+                    },
+                    {
+                        "name": "Button Studs"
+                    },
+                    {
+                        "name": "Collar Stays"
+                    },
+                    {
+                        "name": "Cufflinks"
+                    },
+                    {
+                        "name": "Decorative Fans"
+                    },
+                    {
+                        "name": "Earmuffs"
+                    },
+                    {
+                        "name": "Gloves & Mittens"
+                    },
+                    {
+                        "name": "Hair Accessories"
+                    },
+                    {
+                        "name": "Hand Muffs"
+                    },
+                    {
+                        "name": "Handkerchiefs"
+                    },
+                    {
+                        "name": "Hats"
+                    },
+                    {
+                        "name": "Headwear"
+                    },
+                    {
+                        "name": "Leg Warmers"
+                    },
+                    {
+                        "name": "Leis"
+                    },
+                    {
+                        "name": "Maternity Belts & Support Bands"
+                    },
+                    {
+                        "name": "Neck Gaiters"
+                    },
+                    {
+                        "name": "Neckties"
+                    },
+                    {
+                        "name": "Pinback Buttons"
+                    },
+                    {
+                        "name": "Sashes"
+                    },
+                    {
+                        "name": "Scarves & Shawls"
+                    },
+                    {
+                        "name": "Sunglasses"
+                    },
+                    {
+                        "name": "Suspenders"
+                    },
+                    {
+                        "name": "Tie Clips"
+                    },
+                    {
+                        "name": "Traditional Clothing Accessories"
+                    },
+                    {
+                        "name": "Wristbands"
+                    }
+                ]
+            },
+            {
+                "name": "Costumes & Accessories",
+                "subCategories": [
+                    {
+                        "name": "Costume Accessories"
+                    },
+                    {
+                        "name": "Costume Shoes"
+                    },
+                    {
+                        "name": "Costumes"
+                    },
+                    {
+                        "name": "Masks"
+                    }
+                ]
+            },
+            {
+                "name": "Handbag & Wallet Accessories",
+                "subCategories": [
+                    {
+                        "name": "Checkbook Covers"
+                    },
+                    {
+                        "name": "Keychains"
+                    },
+                    {
+                        "name": "Lanyards"
+                    },
+                    {
+                        "name": "Wallet Chains"
+                    }
+                ]
+            },
+            {
+                "name": "Handbags, Wallets & Cases",
+                "subCategories": [
+                    {
+                        "name": "Badge & Pass Holders"
+                    },
+                    {
+                        "name": "Business Card Cases"
+                    },
+                    {
+                        "name": "Handbags"
+                    },
+                    {
+                        "name": "Wallets & Money Clips"
+                    }
+                ]
+            },
+            {
+                "name": "Jewelry",
+                "subCategories": [
+                    {
+                        "name": "Anklets"
+                    },
+                    {
+                        "name": "Body Jewelry"
+                    },
+                    {
+                        "name": "Bracelets"
+                    },
+                    {
+                        "name": "Brooches & Lapel Pins"
+                    },
+                    {
+                        "name": "Charms & Pendants"
+                    },
+                    {
+                        "name": "Earrings"
+                    },
+                    {
+                        "name": "Jewelry Sets"
+                    },
+                    {
+                        "name": "Necklaces"
+                    },
+                    {
+                        "name": "Rings"
+                    },
+                    {
+                        "name": "Watch Accessories"
+                    },
+                    {
+                        "name": "Watches"
+                    }
+                ]
+            },
+            {
+                "name": "Shoe Accessories",
+                "subCategories": [
+                    {
+                        "name": "Boot Liners"
+                    },
+                    {
+                        "name": "Gaiters"
+                    },
+                    {
+                        "name": "Shoe Covers"
+                    },
+                    {
+                        "name": "Shoelaces"
+                    },
+                    {
+                        "name": "Spurs"
+                    }
+                ]
+            },
+            {
+                "name": "Shoes",
+                "subCategories": []
+            }
+        ]
+    },
+    {
+        "name": "Arts & Entertainment",
+        "icon": "draw",
+        "subCategories": [
+            {
+                "name": "Event Tickets",
+                "subCategories": []
+            },
+            {
+                "name": "Hobbies & Creative Arts",
+                "subCategories": [
+                    {
+                        "name": "Arts & Crafts"
+                    },
+                    {
+                        "name": "Collectibles"
+                    },
+                    {
+                        "name": "Homebrewing & Winemaking Supplies"
+                    },
+                    {
+                        "name": "Juggling"
+                    },
+                    {
+                        "name": "Magic & Novelties"
+                    },
+                    {
+                        "name": "Model Making"
+                    },
+                    {
+                        "name": "Musical Instrument & Orchestra Accessories"
+                    },
+                    {
+                        "name": "Musical Instruments"
+                    }
+                ]
+            },
+            {
+                "name": "Party & Celebration",
+                "subCategories": [
+                    {
+                        "name": "Gift Giving"
+                    },
+                    {
+                        "name": "Party Supplies"
+                    },
+                    {
+                        "name": "Special Effects"
+                    },
+                    {
+                        "name": "Trophies & Awards"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Baby & Toddler",
+        "icon": "human-male-child",
+        "subCategories": [
+            {
+                "name": "Baby Bathing",
+                "subCategories": [
+                    {
+                        "name": "Baby Bathtubs & Bath Seats"
+                    },
+                    {
+                        "name": "Shower Visors"
+                    }
+                ]
+            },
+            {
+                "name": "Baby Gift Sets",
+                "subCategories": []
+            },
+            {
+                "name": "Baby Health",
+                "subCategories": [
+                    {
+                        "name": "Baby Health & Grooming Kits"
+                    },
+                    {
+                        "name": "Nasal Aspirators"
+                    },
+                    {
+                        "name": "Pacifier Clips & Holders"
+                    },
+                    {
+                        "name": "Pacifier Wipes"
+                    },
+                    {
+                        "name": "Pacifiers & Teethers"
+                    }
+                ]
+            },
+            {
+                "name": "Baby Safety",
+                "subCategories": [
+                    {
+                        "name": "Baby & Pet Gate Accessories"
+                    },
+                    {
+                        "name": "Baby & Pet Gates"
+                    },
+                    {
+                        "name": "Baby Monitors"
+                    },
+                    {
+                        "name": "Baby Safety Harnesses & Leashes"
+                    },
+                    {
+                        "name": "Baby Safety Locks & Guards"
+                    },
+                    {
+                        "name": "Baby Safety Rails"
+                    }
+                ]
+            },
+            {
+                "name": "Baby Toys & Activity Equipment",
+                "subCategories": [
+                    {
+                        "name": "Alphabet Toys"
+                    },
+                    {
+                        "name": "Baby Activity Toys"
+                    },
+                    {
+                        "name": "Baby Bouncers & Rockers"
+                    },
+                    {
+                        "name": "Baby Jumpers & Swings"
+                    },
+                    {
+                        "name": "Baby Mobile Accessories"
+                    },
+                    {
+                        "name": "Baby Mobiles"
+                    },
+                    {
+                        "name": "Baby Soothers"
+                    },
+                    {
+                        "name": "Baby Walkers & Entertainers"
+                    },
+                    {
+                        "name": "Play Mats & Gyms"
+                    },
+                    {
+                        "name": "Play Yards"
+                    },
+                    {
+                        "name": "Push & Pull Toys"
+                    },
+                    {
+                        "name": "Rattles"
+                    },
+                    {
+                        "name": "Sorting & Stacking Toys"
+                    }
+                ]
+            },
+            {
+                "name": "Baby Transport",
+                "subCategories": [
+                    {
+                        "name": "Baby & Toddler Car Seats"
+                    },
+                    {
+                        "name": "Baby Carriers"
+                    },
+                    {
+                        "name": "Baby Strollers"
+                    }
+                ]
+            },
+            {
+                "name": "Baby Transport Accessories",
+                "subCategories": [
+                    {
+                        "name": "Baby & Toddler Car Seat Accessories"
+                    },
+                    {
+                        "name": "Baby Carrier Accessories"
+                    },
+                    {
+                        "name": "Baby Stroller Accessories"
+                    },
+                    {
+                        "name": "Baby Transport Liners & Sacks"
+                    },
+                    {
+                        "name": "Shopping Cart & High Chair Covers"
+                    }
+                ]
+            },
+            {
+                "name": "Diapering",
+                "subCategories": [
+                    {
+                        "name": "Baby Wipe Dispensers & Warmers"
+                    },
+                    {
+                        "name": "Baby Wipes"
+                    },
+                    {
+                        "name": "Changing Mat & Tray Covers"
+                    },
+                    {
+                        "name": "Changing Mats & Trays"
+                    },
+                    {
+                        "name": "Diaper Kits"
+                    },
+                    {
+                        "name": "Diaper Liners"
+                    },
+                    {
+                        "name": "Diaper Organizers"
+                    },
+                    {
+                        "name": "Diaper Pail Accessories"
+                    },
+                    {
+                        "name": "Diaper Pails"
+                    },
+                    {
+                        "name": "Diaper Rash Treatments"
+                    },
+                    {
+                        "name": "Diaper Wet Bags"
+                    },
+                    {
+                        "name": "Diapers"
+                    }
+                ]
+            },
+            {
+                "name": "Nursing & Feeding",
+                "subCategories": [
+                    {
+                        "name": "Baby & Toddler Food"
+                    },
+                    {
+                        "name": "Baby Bottle Nipples & Liners"
+                    },
+                    {
+                        "name": "Baby Bottles"
+                    },
+                    {
+                        "name": "Baby Care Timers"
+                    },
+                    {
+                        "name": "Bibs"
+                    },
+                    {
+                        "name": "Bottle Warmers & Sterilizers"
+                    },
+                    {
+                        "name": "Breast Milk Storage Containers"
+                    },
+                    {
+                        "name": "Breast Pump Accessories"
+                    },
+                    {
+                        "name": "Breast Pumps"
+                    },
+                    {
+                        "name": "Burp Cloths"
+                    },
+                    {
+                        "name": "Nursing Covers"
+                    },
+                    {
+                        "name": "Nursing Pads & Shields"
+                    },
+                    {
+                        "name": "Nursing Pillow Covers"
+                    },
+                    {
+                        "name": "Nursing Pillows"
+                    },
+                    {
+                        "name": "Sippy Cups"
+                    }
+                ]
+            },
+            {
+                "name": "Potty Training",
+                "subCategories": [
+                    {
+                        "name": "Potty Seats"
+                    },
+                    {
+                        "name": "Potty Training Kits"
+                    }
+                ]
+            },
+            {
+                "name": "Swaddling & Receiving Blankets",
+                "subCategories": [
+                    {
+                        "name": "Receiving Blankets"
+                    },
+                    {
+                        "name": "Swaddling Blankets"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Business & Industrial",
+        "icon": "city-variant",
+        "subCategories": [
+            {
+                "name": "Advertising & Marketing",
+                "subCategories": [
+                    {
+                        "name": "Brochures"
+                    },
+                    {
+                        "name": "Trade Show Counters"
+                    },
+                    {
+                        "name": "Trade Show Displays"
+                    }
+                ]
+            },
+            {
+                "name": "Agriculture",
+                "subCategories": [
+                    {
+                        "name": "Animal Husbandry"
+                    }
+                ]
+            },
+            {
+                "name": "Automation Control Components",
+                "subCategories": [
+                    {
+                        "name": "Programmable Logic Controllers"
+                    },
+                    {
+                        "name": "Variable Frequency & Adjustable Speed Drives"
+                    }
+                ]
+            },
+            {
+                "name": "Construction",
+                "subCategories": [
+                    {
+                        "name": "Surveying"
+                    },
+                    {
+                        "name": "Traffic Cones & Barrels"
+                    }
+                ]
+            },
+            {
+                "name": "Dentistry",
+                "subCategories": [
+                    {
+                        "name": "Dental Cement"
+                    },
+                    {
+                        "name": "Dental Tools"
+                    },
+                    {
+                        "name": "Prophy Paste"
+                    }
+                ]
+            },
+            {
+                "name": "Film & Television",
+                "subCategories": []
+            },
+            {
+                "name": "Finance & Insurance",
+                "subCategories": [
+                    {
+                        "name": "Bullion"
+                    }
+                ]
+            },
+            {
+                "name": "Food Service",
+                "subCategories": [
+                    {
+                        "name": "Bakery Boxes"
+                    },
+                    {
+                        "name": "Bus Tubs"
+                    },
+                    {
+                        "name": "Check Presenters"
+                    },
+                    {
+                        "name": "Concession Food Containers"
+                    },
+                    {
+                        "name": "Disposable Lids"
+                    },
+                    {
+                        "name": "Disposable Serveware"
+                    },
+                    {
+                        "name": "Disposable Tableware"
+                    },
+                    {
+                        "name": "Food Service Baskets"
+                    },
+                    {
+                        "name": "Food Service Carts"
+                    },
+                    {
+                        "name": "Food Washers & Dryers"
+                    },
+                    {
+                        "name": "Hot Dog Rollers"
+                    },
+                    {
+                        "name": "Ice Bins"
+                    },
+                    {
+                        "name": "Plate & Dish Warmers"
+                    },
+                    {
+                        "name": "Sneeze Guards"
+                    },
+                    {
+                        "name": "Take-Out Containers"
+                    },
+                    {
+                        "name": "Tilt Skillets"
+                    },
+                    {
+                        "name": "Vending Machines"
+                    }
+                ]
+            },
+            {
+                "name": "Forestry & Logging",
+                "subCategories": []
+            },
+            {
+                "name": "Hairdressing & Cosmetology",
+                "subCategories": [
+                    {
+                        "name": "Hairdressing Capes & Neck Covers"
+                    },
+                    {
+                        "name": "Pedicure Chairs"
+                    },
+                    {
+                        "name": "Salon Chairs"
+                    }
+                ]
+            },
+            {
+                "name": "Heavy Machinery",
+                "subCategories": [
+                    {
+                        "name": "Chippers"
+                    }
+                ]
+            },
+            {
+                "name": "Hotel & Hospitality",
+                "subCategories": []
+            },
+            {
+                "name": "Industrial Storage",
+                "subCategories": [
+                    {
+                        "name": "Industrial Cabinets"
+                    },
+                    {
+                        "name": "Industrial Shelving"
+                    },
+                    {
+                        "name": "Shipping Containers"
+                    },
+                    {
+                        "name": "Wire Partitions, Enclosures & Doors"
+                    }
+                ]
+            },
+            {
+                "name": "Industrial Storage Accessories",
+                "subCategories": []
+            },
+            {
+                "name": "Janitorial Carts & Caddies",
+                "subCategories": []
+            },
+            {
+                "name": "Law Enforcement",
+                "subCategories": [
+                    {
+                        "name": "Cuffs"
+                    },
+                    {
+                        "name": "Metal Detectors"
+                    }
+                ]
+            },
+            {
+                "name": "Manufacturing",
+                "subCategories": []
+            },
+            {
+                "name": "Material Handling",
+                "subCategories": [
+                    {
+                        "name": "Conveyors"
+                    },
+                    {
+                        "name": "Lifts & Hoists"
+                    },
+                    {
+                        "name": "Pallets & Loading Platforms"
+                    }
+                ]
+            },
+            {
+                "name": "Medical",
+                "subCategories": [
+                    {
+                        "name": "Hospital Curtains"
+                    },
+                    {
+                        "name": "Hospital Gowns"
+                    },
+                    {
+                        "name": "Medical Bedding"
+                    },
+                    {
+                        "name": "Medical Equipment"
+                    },
+                    {
+                        "name": "Medical Furniture"
+                    },
+                    {
+                        "name": "Medical Instruments"
+                    },
+                    {
+                        "name": "Medical Supplies"
+                    },
+                    {
+                        "name": "Medical Teaching Equipment"
+                    },
+                    {
+                        "name": "Scrub Caps"
+                    },
+                    {
+                        "name": "Scrubs"
+                    },
+                    {
+                        "name": "Surgical Gowns"
+                    }
+                ]
+            },
+            {
+                "name": "Mining & Quarrying",
+                "subCategories": []
+            },
+            {
+                "name": "Piercing & Tattooing",
+                "subCategories": [
+                    {
+                        "name": "Piercing Supplies"
+                    },
+                    {
+                        "name": "Tattooing Supplies"
+                    }
+                ]
+            },
+            {
+                "name": "Retail",
+                "subCategories": [
+                    {
+                        "name": "Clothing Display Racks"
+                    },
+                    {
+                        "name": "Display Mannequins"
+                    },
+                    {
+                        "name": "Mannequin Parts"
+                    },
+                    {
+                        "name": "Money Handling"
+                    },
+                    {
+                        "name": "Paper & Plastic Shopping Bags"
+                    },
+                    {
+                        "name": "Pricing Guns"
+                    },
+                    {
+                        "name": "Retail Display Cases"
+                    },
+                    {
+                        "name": "Retail Display Props & Models"
+                    }
+                ]
+            },
+            {
+                "name": "Science & Laboratory",
+                "subCategories": [
+                    {
+                        "name": "Biochemicals"
+                    },
+                    {
+                        "name": "Dissection Kits"
+                    },
+                    {
+                        "name": "Laboratory Chemicals"
+                    },
+                    {
+                        "name": "Laboratory Equipment"
+                    },
+                    {
+                        "name": "Laboratory Specimens"
+                    },
+                    {
+                        "name": "Laboratory Supplies"
+                    }
+                ]
+            },
+            {
+                "name": "Signage",
+                "subCategories": [
+                    {
+                        "name": "Business Hour Signs"
+                    },
+                    {
+                        "name": "Digital Signs"
+                    },
+                    {
+                        "name": "Electric Signs"
+                    },
+                    {
+                        "name": "Emergency & Exit Signs"
+                    },
+                    {
+                        "name": "Facility Identification Signs"
+                    },
+                    {
+                        "name": "Open & Closed Signs"
+                    },
+                    {
+                        "name": "Parking Signs & Permits"
+                    },
+                    {
+                        "name": "Policy Signs"
+                    },
+                    {
+                        "name": "Retail & Sale Signs"
+                    },
+                    {
+                        "name": "Road & Traffic Signs"
+                    },
+                    {
+                        "name": "Safety & Warning Signs"
+                    },
+                    {
+                        "name": "Security Signs"
+                    },
+                    {
+                        "name": "Sidewalk & Yard Signs"
+                    }
+                ]
+            },
+            {
+                "name": "Work Safety Protective Gear",
+                "subCategories": [
+                    {
+                        "name": "Bullet Proof Vests"
+                    },
+                    {
+                        "name": "Gas Mask & Respirator Accessories"
+                    },
+                    {
+                        "name": "Hardhats"
+                    },
+                    {
+                        "name": "Hazardous Material Suits"
+                    },
+                    {
+                        "name": "Protective Aprons"
+                    },
+                    {
+                        "name": "Protective Eyewear"
+                    },
+                    {
+                        "name": "Protective Masks"
+                    },
+                    {
+                        "name": "Safety Gloves"
+                    },
+                    {
+                        "name": "Safety Knee Pads"
+                    },
+                    {
+                        "name": "Welding Helmets"
+                    },
+                    {
+                        "name": "Work Safety Harnesses"
+                    },
+                    {
+                        "name": "Work Safety Tethers"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Cameras & Optics",
+        "icon": "camera",
+        "subCategories": [
+            {
+                "name": "Camera & Optic Accessories",
+                "subCategories": [
+                    {
+                        "name": "Camera & Optic Replacement Cables"
+                    },
+                    {
+                        "name": "Camera & Video Camera Lenses"
+                    },
+                    {
+                        "name": "Camera Lens Accessories"
+                    },
+                    {
+                        "name": "Camera Parts & Accessories"
+                    },
+                    {
+                        "name": "Optic Accessories"
+                    },
+                    {
+                        "name": "Tripod & Monopod Accessories"
+                    },
+                    {
+                        "name": "Tripods & Monopods"
+                    }
+                ]
+            },
+            {
+                "name": "Cameras",
+                "subCategories": [
+                    {
+                        "name": "Borescopes"
+                    },
+                    {
+                        "name": "Digital Cameras"
+                    },
+                    {
+                        "name": "Disposable Cameras"
+                    },
+                    {
+                        "name": "Film Cameras"
+                    },
+                    {
+                        "name": "Surveillance Cameras"
+                    },
+                    {
+                        "name": "Trail Cameras"
+                    },
+                    {
+                        "name": "Video Cameras"
+                    },
+                    {
+                        "name": "Webcams"
+                    }
+                ]
+            },
+            {
+                "name": "Optics",
+                "subCategories": [
+                    {
+                        "name": "Binoculars"
+                    },
+                    {
+                        "name": "Monoculars"
+                    },
+                    {
+                        "name": "Rangefinders"
+                    },
+                    {
+                        "name": "Scopes"
+                    }
+                ]
+            },
+            {
+                "name": "Photography",
+                "subCategories": [
+                    {
+                        "name": "Darkroom"
+                    },
+                    {
+                        "name": "Lighting & Studio"
+                    },
+                    {
+                        "name": "Photo Mounting Supplies"
+                    },
+                    {
+                        "name": "Photo Negative & Slide Storage"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Electronics",
+        "icon": "devices",
+        "subCategories": [
+            {
+                "name": "Arcade Equipment",
+                "subCategories": [
+                    {
+                        "name": "Basketball Arcade Games"
+                    },
+                    {
+                        "name": "Pinball Machine Accessories"
+                    },
+                    {
+                        "name": "Pinball Machines"
+                    },
+                    {
+                        "name": "Skee-Ball Machines"
+                    },
+                    {
+                        "name": "Video Game Arcade Cabinet Accessories"
+                    },
+                    {
+                        "name": "Video Game Arcade Cabinets"
+                    }
+                ]
+            },
+            {
+                "name": "Audio",
+                "subCategories": [
+                    {
+                        "name": "Audio Accessories"
+                    },
+                    {
+                        "name": "Audio Components"
+                    },
+                    {
+                        "name": "Audio Players & Recorders"
+                    },
+                    {
+                        "name": "Bullhorns"
+                    },
+                    {
+                        "name": "DJ & Specialty Audio"
+                    },
+                    {
+                        "name": "Public Address Systems"
+                    },
+                    {
+                        "name": "Stage Equipment"
+                    }
+                ]
+            },
+            {
+                "name": "Circuit Boards & Components",
+                "subCategories": [
+                    {
+                        "name": "Circuit Board Accessories"
+                    },
+                    {
+                        "name": "Circuit Decoders & Encoders"
+                    },
+                    {
+                        "name": "Circuit Prototyping"
+                    },
+                    {
+                        "name": "Electronic Filters"
+                    },
+                    {
+                        "name": "Passive Circuit Components"
+                    },
+                    {
+                        "name": "Printed Circuit Boards"
+                    },
+                    {
+                        "name": "Semiconductors"
+                    }
+                ]
+            },
+            {
+                "name": "Communications",
+                "subCategories": [
+                    {
+                        "name": "Answering Machines"
+                    },
+                    {
+                        "name": "Caller IDs"
+                    },
+                    {
+                        "name": "Communication Radio Accessories"
+                    },
+                    {
+                        "name": "Communication Radios"
+                    },
+                    {
+                        "name": "Intercom Accessories"
+                    },
+                    {
+                        "name": "Intercoms"
+                    },
+                    {
+                        "name": "Pagers"
+                    },
+                    {
+                        "name": "Telephony"
+                    },
+                    {
+                        "name": "Video Conferencing"
+                    }
+                ]
+            },
+            {
+                "name": "Components",
+                "subCategories": [
+                    {
+                        "name": "Accelerometers"
+                    },
+                    {
+                        "name": "Converters"
+                    },
+                    {
+                        "name": "Electronics Component Connectors"
+                    },
+                    {
+                        "name": "Modulators"
+                    },
+                    {
+                        "name": "Splitters"
+                    }
+                ]
+            },
+            {
+                "name": "Computers",
+                "subCategories": [
+                    {
+                        "name": "Barebone Computers"
+                    },
+                    {
+                        "name": "Computer Servers"
+                    },
+                    {
+                        "name": "Desktop Computers"
+                    },
+                    {
+                        "name": "Handheld Devices"
+                    },
+                    {
+                        "name": "Interactive Kiosks"
+                    },
+                    {
+                        "name": "Laptops"
+                    },
+                    {
+                        "name": "Smart Glasses"
+                    },
+                    {
+                        "name": "Tablet Computers"
+                    },
+                    {
+                        "name": "Thin & Zero Clients"
+                    },
+                    {
+                        "name": "Touch Table Computers"
+                    }
+                ]
+            },
+            {
+                "name": "Electronics Accessories",
+                "subCategories": [
+                    {
+                        "name": "Adapters"
+                    },
+                    {
+                        "name": "Antenna Accessories"
+                    },
+                    {
+                        "name": "Antennas"
+                    },
+                    {
+                        "name": "Audio & Video Splitters & Switches"
+                    },
+                    {
+                        "name": "Blank Media"
+                    },
+                    {
+                        "name": "Cable Management"
+                    },
+                    {
+                        "name": "Cables"
+                    },
+                    {
+                        "name": "Computer Accessories"
+                    },
+                    {
+                        "name": "Computer Components"
+                    },
+                    {
+                        "name": "Electronics Cleaners"
+                    },
+                    {
+                        "name": "Electronics Films & Shields"
+                    },
+                    {
+                        "name": "Memory"
+                    },
+                    {
+                        "name": "Memory Accessories"
+                    },
+                    {
+                        "name": "Mobile Phone & Tablet Tripods & Monopods"
+                    },
+                    {
+                        "name": "Power"
+                    },
+                    {
+                        "name": "Remote Controls"
+                    },
+                    {
+                        "name": "Signal Boosters"
+                    },
+                    {
+                        "name": "Signal Jammers"
+                    }
+                ]
+            },
+            {
+                "name": "GPS Accessories",
+                "subCategories": [
+                    {
+                        "name": "GPS Cases"
+                    },
+                    {
+                        "name": "GPS Mounts"
+                    }
+                ]
+            },
+            {
+                "name": "GPS Navigation Systems",
+                "subCategories": []
+            },
+            {
+                "name": "GPS Tracking Devices",
+                "subCategories": []
+            },
+            {
+                "name": "Marine Electronics",
+                "subCategories": [
+                    {
+                        "name": "Fish Finders"
+                    },
+                    {
+                        "name": "Marine Audio & Video Receivers"
+                    },
+                    {
+                        "name": "Marine Chartplotters & GPS"
+                    },
+                    {
+                        "name": "Marine Radar"
+                    },
+                    {
+                        "name": "Marine Radios"
+                    },
+                    {
+                        "name": "Marine Speakers"
+                    }
+                ]
+            },
+            {
+                "name": "Networking",
+                "subCategories": [
+                    {
+                        "name": "Bridges & Routers"
+                    },
+                    {
+                        "name": "Concentrators & Multiplexers"
+                    },
+                    {
+                        "name": "Hubs & Switches"
+                    },
+                    {
+                        "name": "Modem Accessories"
+                    },
+                    {
+                        "name": "Modems"
+                    },
+                    {
+                        "name": "Network Cards & Adapters"
+                    },
+                    {
+                        "name": "Network Security & Firewall Devices"
+                    },
+                    {
+                        "name": "Power Over Ethernet Adapters"
+                    },
+                    {
+                        "name": "Print Servers"
+                    },
+                    {
+                        "name": "Repeaters & Transceivers"
+                    }
+                ]
+            },
+            {
+                "name": "Print, Copy, Scan & Fax",
+                "subCategories": [
+                    {
+                        "name": "3D Printer Accessories"
+                    },
+                    {
+                        "name": "3D Printers"
+                    },
+                    {
+                        "name": "Printer, Copier & Fax Machine Accessories"
+                    },
+                    {
+                        "name": "Printers, Copiers & Fax Machines"
+                    },
+                    {
+                        "name": "Scanner Accessories"
+                    },
+                    {
+                        "name": "Scanners"
+                    }
+                ]
+            },
+            {
+                "name": "Radar Detectors",
+                "subCategories": []
+            },
+            {
+                "name": "Speed Radars",
+                "subCategories": []
+            },
+            {
+                "name": "Toll Collection Devices",
+                "subCategories": []
+            },
+            {
+                "name": "Video",
+                "subCategories": [
+                    {
+                        "name": "Computer Monitors"
+                    },
+                    {
+                        "name": "Projectors"
+                    },
+                    {
+                        "name": "Satellite & Cable TV"
+                    },
+                    {
+                        "name": "Televisions"
+                    },
+                    {
+                        "name": "Video Accessories"
+                    },
+                    {
+                        "name": "Video Editing Hardware & Production Equipment"
+                    },
+                    {
+                        "name": "Video Multiplexers"
+                    },
+                    {
+                        "name": "Video Players & Recorders"
+                    },
+                    {
+                        "name": "Video Servers"
+                    },
+                    {
+                        "name": "Video Transmitters"
+                    }
+                ]
+            },
+            {
+                "name": "Video Game Console Accessories",
+                "subCategories": [
+                    {
+                        "name": "Home Game Console Accessories"
+                    },
+                    {
+                        "name": "Portable Game Console Accessories"
+                    }
+                ]
+            },
+            {
+                "name": "Video Game Consoles",
+                "subCategories": []
+            }
+        ]
+    },
+    {
+        "name": "Food, Beverages & Tobacco",
+        "icon": "food",
+        "subCategories": [
+            {
+                "name": "Beverages",
+                "subCategories": [
+                    {
+                        "name": "Alcoholic Beverages"
+                    },
+                    {
+                        "name": "Buttermilk"
+                    },
+                    {
+                        "name": "Coffee"
+                    },
+                    {
+                        "name": "Eggnog"
+                    },
+                    {
+                        "name": "Fruit Flavored Drinks"
+                    },
+                    {
+                        "name": "Hot Chocolate"
+                    },
+                    {
+                        "name": "Juice"
+                    },
+                    {
+                        "name": "Milk"
+                    },
+                    {
+                        "name": "Non-Dairy Milk"
+                    },
+                    {
+                        "name": "Powdered Beverage Mixes"
+                    },
+                    {
+                        "name": "Soda"
+                    },
+                    {
+                        "name": "Sports & Energy Drinks"
+                    },
+                    {
+                        "name": "Tea & Infusions"
+                    },
+                    {
+                        "name": "Vinegar Drinks"
+                    },
+                    {
+                        "name": "Water"
+                    }
+                ]
+            },
+            {
+                "name": "Food Items",
+                "subCategories": [
+                    {
+                        "name": "Bakery"
+                    },
+                    {
+                        "name": "Candied & Chocolate Covered Fruit"
+                    },
+                    {
+                        "name": "Candy & Chocolate"
+                    },
+                    {
+                        "name": "Condiments & Sauces"
+                    },
+                    {
+                        "name": "Cooking & Baking Ingredients"
+                    },
+                    {
+                        "name": "Dairy Products"
+                    },
+                    {
+                        "name": "Dips & Spreads"
+                    },
+                    {
+                        "name": "Food Gift Baskets"
+                    },
+                    {
+                        "name": "Frozen Desserts & Novelties"
+                    },
+                    {
+                        "name": "Fruits & Vegetables"
+                    },
+                    {
+                        "name": "Grains, Rice & Cereal"
+                    },
+                    {
+                        "name": "Meat, Seafood & Eggs"
+                    },
+                    {
+                        "name": "Nuts & Seeds"
+                    },
+                    {
+                        "name": "Pasta & Noodles"
+                    },
+                    {
+                        "name": "Prepared Foods"
+                    },
+                    {
+                        "name": "Seasonings & Spices"
+                    },
+                    {
+                        "name": "Snack Foods"
+                    },
+                    {
+                        "name": "Soups & Broths"
+                    },
+                    {
+                        "name": "Tofu, Soy & Vegetarian Products"
+                    }
+                ]
+            },
+            {
+                "name": "Tobacco Products",
+                "subCategories": [
+                    {
+                        "name": "Chewing Tobacco"
+                    },
+                    {
+                        "name": "Cigarettes"
+                    },
+                    {
+                        "name": "Cigars"
+                    },
+                    {
+                        "name": "Loose Tobacco"
+                    },
+                    {
+                        "name": "Smoking Pipes"
+                    },
+                    {
+                        "name": "Vaporizers & Electronic Cigarettes"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Furniture",
+        "icon": "sofa",
+        "subCategories": [
+            {
+                "name": "Baby & Toddler Furniture",
+                "subCategories": [
+                    {
+                        "name": "Baby & Toddler Furniture Sets"
+                    },
+                    {
+                        "name": "Bassinet & Cradle Accessories"
+                    },
+                    {
+                        "name": "Bassinets & Cradles"
+                    },
+                    {
+                        "name": "Changing Tables"
+                    },
+                    {
+                        "name": "Crib & Toddler Bed Accessories"
+                    },
+                    {
+                        "name": "Cribs & Toddler Beds"
+                    },
+                    {
+                        "name": "High Chair & Booster Seat Accessories"
+                    },
+                    {
+                        "name": "High Chairs & Booster Seats"
+                    }
+                ]
+            },
+            {
+                "name": "Beds & Accessories",
+                "subCategories": [
+                    {
+                        "name": "Bed & Bed Frame Accessories"
+                    },
+                    {
+                        "name": "Beds & Bed Frames"
+                    },
+                    {
+                        "name": "Headboards & Footboards"
+                    },
+                    {
+                        "name": "Mattress Foundations"
+                    },
+                    {
+                        "name": "Mattresses"
+                    }
+                ]
+            },
+            {
+                "name": "Benches",
+                "subCategories": [
+                    {
+                        "name": "Kitchen & Dining Benches"
+                    },
+                    {
+                        "name": "Storage & Entryway Benches"
+                    },
+                    {
+                        "name": "Vanity Benches"
+                    }
+                ]
+            },
+            {
+                "name": "Cabinets & Storage",
+                "subCategories": [
+                    {
+                        "name": "Armoires & Wardrobes"
+                    },
+                    {
+                        "name": "Buffets & Sideboards"
+                    },
+                    {
+                        "name": "China Cabinets & Hutches"
+                    },
+                    {
+                        "name": "Dressers"
+                    },
+                    {
+                        "name": "File Cabinets"
+                    },
+                    {
+                        "name": "Ironing Centers"
+                    },
+                    {
+                        "name": "Kitchen Cabinets"
+                    },
+                    {
+                        "name": "Magazine Racks"
+                    },
+                    {
+                        "name": "Media Storage Cabinets & Racks"
+                    },
+                    {
+                        "name": "Storage Cabinets & Lockers"
+                    },
+                    {
+                        "name": "Storage Chests"
+                    },
+                    {
+                        "name": "Vanities"
+                    },
+                    {
+                        "name": "Wine & Liquor Cabinets"
+                    },
+                    {
+                        "name": "Wine Racks"
+                    }
+                ]
+            },
+            {
+                "name": "Carts & Islands",
+                "subCategories": [
+                    {
+                        "name": "Kitchen & Dining Carts"
+                    },
+                    {
+                        "name": "Kitchen Islands"
+                    }
+                ]
+            },
+            {
+                "name": "Chair Accessories",
+                "subCategories": [
+                    {
+                        "name": "Hanging Chair Replacement Parts"
+                    }
+                ]
+            },
+            {
+                "name": "Chairs",
+                "subCategories": [
+                    {
+                        "name": "Arm Chairs, Recliners & Sleeper Chairs"
+                    },
+                    {
+                        "name": "Bean Bag Chairs"
+                    },
+                    {
+                        "name": "Chaises"
+                    },
+                    {
+                        "name": "Electric Massaging Chairs"
+                    },
+                    {
+                        "name": "Floor Chairs"
+                    },
+                    {
+                        "name": "Folding Chairs & Stools"
+                    },
+                    {
+                        "name": "Gaming Chairs"
+                    },
+                    {
+                        "name": "Hanging Chairs"
+                    },
+                    {
+                        "name": "Kitchen & Dining Room Chairs"
+                    },
+                    {
+                        "name": "Rocking Chairs"
+                    },
+                    {
+                        "name": "Slipper Chairs"
+                    },
+                    {
+                        "name": "Table & Bar Stools"
+                    }
+                ]
+            },
+            {
+                "name": "Entertainment Centers & TV Stands",
+                "subCategories": []
+            },
+            {
+                "name": "Furniture Sets",
+                "subCategories": [
+                    {
+                        "name": "Bathroom Furniture Sets"
+                    },
+                    {
+                        "name": "Bedroom Furniture Sets"
+                    },
+                    {
+                        "name": "Kitchen & Dining Furniture Sets"
+                    },
+                    {
+                        "name": "Living Room Furniture Sets"
+                    }
+                ]
+            },
+            {
+                "name": "Futon Frames",
+                "subCategories": []
+            },
+            {
+                "name": "Futon Pads",
+                "subCategories": []
+            },
+            {
+                "name": "Futons",
+                "subCategories": []
+            },
+            {
+                "name": "Office Furniture",
+                "subCategories": [
+                    {
+                        "name": "Desks"
+                    },
+                    {
+                        "name": "Office Chairs"
+                    },
+                    {
+                        "name": "Office Furniture Sets"
+                    },
+                    {
+                        "name": "Workspace Tables"
+                    },
+                    {
+                        "name": "Workstations & Cubicles"
+                    }
+                ]
+            },
+            {
+                "name": "Office Furniture Accessories",
+                "subCategories": [
+                    {
+                        "name": "Desk Parts & Accessories"
+                    },
+                    {
+                        "name": "Office Chair Accessories"
+                    },
+                    {
+                        "name": "Workstation & Cubicle Accessories"
+                    }
+                ]
+            },
+            {
+                "name": "Ottomans",
+                "subCategories": []
+            },
+            {
+                "name": "Outdoor Furniture",
+                "subCategories": [
+                    {
+                        "name": "Outdoor Beds"
+                    },
+                    {
+                        "name": "Outdoor Furniture Sets"
+                    },
+                    {
+                        "name": "Outdoor Ottomans"
+                    },
+                    {
+                        "name": "Outdoor Seating"
+                    },
+                    {
+                        "name": "Outdoor Storage Boxes"
+                    },
+                    {
+                        "name": "Outdoor Tables"
+                    }
+                ]
+            },
+            {
+                "name": "Outdoor Furniture Accessories",
+                "subCategories": [
+                    {
+                        "name": "Outdoor Furniture Covers"
+                    }
+                ]
+            },
+            {
+                "name": "Room Divider Accessories",
+                "subCategories": []
+            },
+            {
+                "name": "Room Dividers",
+                "subCategories": []
+            },
+            {
+                "name": "Shelving",
+                "subCategories": [
+                    {
+                        "name": "Bookcases & Standing Shelves"
+                    },
+                    {
+                        "name": "Wall Shelves & Ledges"
+                    }
+                ]
+            },
+            {
+                "name": "Shelving Accessories",
+                "subCategories": [
+                    {
+                        "name": "Replacement Shelves"
+                    }
+                ]
+            },
+            {
+                "name": "Sofa Accessories",
+                "subCategories": [
+                    {
+                        "name": "Chair & Sofa Supports"
+                    },
+                    {
+                        "name": "Sectional Sofa Units"
+                    }
+                ]
+            },
+            {
+                "name": "Sofas",
+                "subCategories": []
+            },
+            {
+                "name": "Table Accessories",
+                "subCategories": [
+                    {
+                        "name": "Table Legs"
+                    },
+                    {
+                        "name": "Table Tops"
+                    }
+                ]
+            },
+            {
+                "name": "Tables",
+                "subCategories": [
+                    {
+                        "name": "Accent Tables"
+                    },
+                    {
+                        "name": "Activity Tables"
+                    },
+                    {
+                        "name": "Folding Tables"
+                    },
+                    {
+                        "name": "Kitchen & Dining Room Tables"
+                    },
+                    {
+                        "name": "Kotatsu"
+                    },
+                    {
+                        "name": "Nightstands"
+                    },
+                    {
+                        "name": "Poker & Game Tables"
+                    },
+                    {
+                        "name": "Sewing Machine Tables"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Hardware",
+        "icon": "tools",
+        "subCategories": [
+            {
+                "name": "Building Consumables",
+                "subCategories": [
+                    {
+                        "name": "Chemicals"
+                    },
+                    {
+                        "name": "Hardware Glue & Adhesives"
+                    },
+                    {
+                        "name": "Hardware Tape"
+                    },
+                    {
+                        "name": "Lubricants"
+                    },
+                    {
+                        "name": "Masonry Consumables"
+                    },
+                    {
+                        "name": "Painting Consumables"
+                    },
+                    {
+                        "name": "Plumbing Primer"
+                    },
+                    {
+                        "name": "Protective Coatings & Sealants"
+                    },
+                    {
+                        "name": "Solder & Flux"
+                    },
+                    {
+                        "name": "Solvents, Strippers & Thinners"
+                    },
+                    {
+                        "name": "Wall Patching Compounds & Plaster"
+                    }
+                ]
+            },
+            {
+                "name": "Building Materials",
+                "subCategories": [
+                    {
+                        "name": "Countertops"
+                    },
+                    {
+                        "name": "Door Hardware"
+                    },
+                    {
+                        "name": "Doors"
+                    },
+                    {
+                        "name": "Drywall"
+                    },
+                    {
+                        "name": "Flooring & Carpet"
+                    },
+                    {
+                        "name": "Glass"
+                    },
+                    {
+                        "name": "Handrails & Railing Systems"
+                    },
+                    {
+                        "name": "Hatches"
+                    },
+                    {
+                        "name": "Insulation"
+                    },
+                    {
+                        "name": "Lumber & Sheet Stock"
+                    },
+                    {
+                        "name": "Molding"
+                    },
+                    {
+                        "name": "Rebar & Remesh"
+                    },
+                    {
+                        "name": "Roofing"
+                    },
+                    {
+                        "name": "Shutters"
+                    },
+                    {
+                        "name": "Siding"
+                    },
+                    {
+                        "name": "Sound Dampening Panels & Foam"
+                    },
+                    {
+                        "name": "Staircases"
+                    },
+                    {
+                        "name": "Wall & Ceiling Tile"
+                    },
+                    {
+                        "name": "Wall Paneling"
+                    },
+                    {
+                        "name": "Weather Stripping & Weatherization Supplies"
+                    },
+                    {
+                        "name": "Window Hardware"
+                    },
+                    {
+                        "name": "Windows"
+                    }
+                ]
+            },
+            {
+                "name": "Fencing & Barriers",
+                "subCategories": [
+                    {
+                        "name": "Fence & Gate Accessories"
+                    },
+                    {
+                        "name": "Fence Panels"
+                    },
+                    {
+                        "name": "Fence Pickets"
+                    },
+                    {
+                        "name": "Fence Posts & Rails"
+                    },
+                    {
+                        "name": "Garden Borders & Edging"
+                    },
+                    {
+                        "name": "Gates"
+                    },
+                    {
+                        "name": "Lattice"
+                    },
+                    {
+                        "name": "Safety & Crowd Control Barriers"
+                    }
+                ]
+            },
+            {
+                "name": "Fuel",
+                "subCategories": [
+                    {
+                        "name": "Home Heating Oil"
+                    },
+                    {
+                        "name": "Kerosene"
+                    },
+                    {
+                        "name": "Propane"
+                    }
+                ]
+            },
+            {
+                "name": "Fuel Containers & Tanks",
+                "subCategories": []
+            },
+            {
+                "name": "Hardware Accessories",
+                "subCategories": [
+                    {
+                        "name": "Brackets & Reinforcement Braces"
+                    },
+                    {
+                        "name": "Cabinet Hardware"
+                    },
+                    {
+                        "name": "Casters"
+                    },
+                    {
+                        "name": "Chain, Wire & Rope"
+                    },
+                    {
+                        "name": "Coils"
+                    },
+                    {
+                        "name": "Concrete Molds"
+                    },
+                    {
+                        "name": "Dowel Pins & Rods"
+                    },
+                    {
+                        "name": "Drawer Slides"
+                    },
+                    {
+                        "name": "Drop Cloths"
+                    },
+                    {
+                        "name": "Filters & Screens"
+                    },
+                    {
+                        "name": "Flagging & Caution Tape"
+                    },
+                    {
+                        "name": "Gas Hoses"
+                    },
+                    {
+                        "name": "Ground Spikes"
+                    },
+                    {
+                        "name": "Hardware Fasteners"
+                    },
+                    {
+                        "name": "Hinges"
+                    },
+                    {
+                        "name": "Hooks, Buckles & Fasteners"
+                    },
+                    {
+                        "name": "Lubrication Hoses"
+                    },
+                    {
+                        "name": "Metal Casting Molds"
+                    },
+                    {
+                        "name": "Moving & Soundproofing Blankets & Covers"
+                    },
+                    {
+                        "name": "Pneumatic Hoses"
+                    },
+                    {
+                        "name": "Post Base Plates"
+                    },
+                    {
+                        "name": "Springs"
+                    },
+                    {
+                        "name": "Tarps"
+                    },
+                    {
+                        "name": "Tool Storage & Organization"
+                    },
+                    {
+                        "name": "Wall Jacks & Braces"
+                    }
+                ]
+            },
+            {
+                "name": "Hardware Pumps",
+                "subCategories": [
+                    {
+                        "name": "Home Appliance Pumps"
+                    },
+                    {
+                        "name": "Pool, Fountain & Pond Pumps"
+                    },
+                    {
+                        "name": "Sprinkler, Booster & Irrigation System Pumps"
+                    },
+                    {
+                        "name": "Sump, Sewage & Effluent Pumps"
+                    },
+                    {
+                        "name": "Utility Pumps"
+                    },
+                    {
+                        "name": "Well Pumps & Systems"
+                    }
+                ]
+            },
+            {
+                "name": "Heating, Ventilation & Air Conditioning",
+                "subCategories": [
+                    {
+                        "name": "Air & Filter Dryers"
+                    },
+                    {
+                        "name": "Air Ducts"
+                    },
+                    {
+                        "name": "HVAC Controls"
+                    },
+                    {
+                        "name": "Vents & Flues"
+                    }
+                ]
+            },
+            {
+                "name": "Locks & Keys",
+                "subCategories": [
+                    {
+                        "name": "Key Blanks"
+                    },
+                    {
+                        "name": "Key Caps"
+                    },
+                    {
+                        "name": "Key Card Entry Systems"
+                    },
+                    {
+                        "name": "Locks & Latches"
+                    }
+                ]
+            },
+            {
+                "name": "Plumbing",
+                "subCategories": [
+                    {
+                        "name": "Plumbing Fittings & Supports"
+                    },
+                    {
+                        "name": "Plumbing Fixture Hardware & Parts"
+                    },
+                    {
+                        "name": "Plumbing Fixtures"
+                    },
+                    {
+                        "name": "Plumbing Hoses & Supply Lines"
+                    },
+                    {
+                        "name": "Plumbing Pipes"
+                    },
+                    {
+                        "name": "Plumbing Repair Kits"
+                    },
+                    {
+                        "name": "Water Dispensing & Filtration"
+                    },
+                    {
+                        "name": "Water Levelers"
+                    },
+                    {
+                        "name": "Water Timers"
+                    },
+                    {
+                        "name": "Well Supplies"
+                    }
+                ]
+            },
+            {
+                "name": "Power & Electrical Supplies",
+                "subCategories": [
+                    {
+                        "name": "Armatures, Rotors & Stators"
+                    },
+                    {
+                        "name": "Ballasts & Starters"
+                    },
+                    {
+                        "name": "Carbon Brushes"
+                    },
+                    {
+                        "name": "Circuit Breaker Panels"
+                    },
+                    {
+                        "name": "Conduit & Housings"
+                    },
+                    {
+                        "name": "Electrical Motors"
+                    },
+                    {
+                        "name": "Electrical Mount Boxes & Brackets"
+                    },
+                    {
+                        "name": "Electrical Plug Caps"
+                    },
+                    {
+                        "name": "Electrical Switches"
+                    },
+                    {
+                        "name": "Electrical Wires & Cable"
+                    },
+                    {
+                        "name": "Extension Cord Accessories"
+                    },
+                    {
+                        "name": "Extension Cords"
+                    },
+                    {
+                        "name": "Generator Accessories"
+                    },
+                    {
+                        "name": "Generators"
+                    },
+                    {
+                        "name": "Home Automation Kits"
+                    },
+                    {
+                        "name": "Phone & Data Jacks"
+                    },
+                    {
+                        "name": "Power Converters"
+                    },
+                    {
+                        "name": "Power Inlets"
+                    },
+                    {
+                        "name": "Power Inverters"
+                    },
+                    {
+                        "name": "Power Outlets & Sockets"
+                    },
+                    {
+                        "name": "Solar Energy Kits"
+                    },
+                    {
+                        "name": "Solar Panels"
+                    },
+                    {
+                        "name": "Voltage Transformers & Regulators"
+                    },
+                    {
+                        "name": "Wall Plates & Covers"
+                    },
+                    {
+                        "name": "Wall Socket Controls & Sensors"
+                    },
+                    {
+                        "name": "Wire Caps & Nuts"
+                    },
+                    {
+                        "name": "Wire Terminals & Connectors"
+                    }
+                ]
+            },
+            {
+                "name": "Small Engines",
+                "subCategories": []
+            },
+            {
+                "name": "Storage Tanks",
+                "subCategories": []
+            },
+            {
+                "name": "Tool Accessories",
+                "subCategories": [
+                    {
+                        "name": "Abrasive Blaster Accessories"
+                    },
+                    {
+                        "name": "Axe Accessories"
+                    },
+                    {
+                        "name": "Cutter Accessories"
+                    },
+                    {
+                        "name": "Drill & Screwdriver Accessories"
+                    },
+                    {
+                        "name": "Driver Accessories"
+                    },
+                    {
+                        "name": "Flashlight Accessories"
+                    },
+                    {
+                        "name": "Grinder Accessories"
+                    },
+                    {
+                        "name": "Hammer Accessories"
+                    },
+                    {
+                        "name": "Industrial Staples"
+                    },
+                    {
+                        "name": "Jigs"
+                    },
+                    {
+                        "name": "Magnetizers & Demagnetizers"
+                    },
+                    {
+                        "name": "Mattock & Pickaxe Accessories"
+                    },
+                    {
+                        "name": "Measuring Tool & Sensor Accessories"
+                    },
+                    {
+                        "name": "Mixing Tool Paddles"
+                    },
+                    {
+                        "name": "Paint Tool Accessories"
+                    },
+                    {
+                        "name": "Power Tool Batteries"
+                    },
+                    {
+                        "name": "Power Tool Chargers"
+                    },
+                    {
+                        "name": "Router Accessories"
+                    },
+                    {
+                        "name": "Sanding Accessories"
+                    },
+                    {
+                        "name": "Saw Accessories"
+                    },
+                    {
+                        "name": "Shaper Accessories"
+                    },
+                    {
+                        "name": "Soldering Iron Accessories"
+                    },
+                    {
+                        "name": "Tool Blades"
+                    },
+                    {
+                        "name": "Tool Handle Wedges"
+                    },
+                    {
+                        "name": "Tool Safety Tethers"
+                    },
+                    {
+                        "name": "Tool Sockets"
+                    },
+                    {
+                        "name": "Tool Stands"
+                    },
+                    {
+                        "name": "Wedge Tools"
+                    },
+                    {
+                        "name": "Welding Accessories"
+                    }
+                ]
+            },
+            {
+                "name": "Tools",
+                "subCategories": [
+                    {
+                        "name": "Abrasive Blasters"
+                    },
+                    {
+                        "name": "Anvils"
+                    },
+                    {
+                        "name": "Axes"
+                    },
+                    {
+                        "name": "Carpentry Jointers"
+                    },
+                    {
+                        "name": "Carving Chisels & Gouges"
+                    },
+                    {
+                        "name": "Caulking Tools"
+                    },
+                    {
+                        "name": "Chimney Brushes"
+                    },
+                    {
+                        "name": "Compactors"
+                    },
+                    {
+                        "name": "Compressors"
+                    },
+                    {
+                        "name": "Concrete Brooms"
+                    },
+                    {
+                        "name": "Cutters"
+                    },
+                    {
+                        "name": "Deburrers"
+                    },
+                    {
+                        "name": "Dollies & Hand Trucks"
+                    },
+                    {
+                        "name": "Drills"
+                    },
+                    {
+                        "name": "Electrician Fish Tape"
+                    },
+                    {
+                        "name": "Flashlights & Headlamps"
+                    },
+                    {
+                        "name": "Grease Guns"
+                    },
+                    {
+                        "name": "Grinders"
+                    },
+                    {
+                        "name": "Grips"
+                    },
+                    {
+                        "name": "Hammers"
+                    },
+                    {
+                        "name": "Handheld Power Mixers"
+                    },
+                    {
+                        "name": "Hardware Torches"
+                    },
+                    {
+                        "name": "Heat Guns"
+                    },
+                    {
+                        "name": "Impact Wrenches & Drivers"
+                    },
+                    {
+                        "name": "Industrial Vibrators"
+                    },
+                    {
+                        "name": "Inspection Mirrors"
+                    },
+                    {
+                        "name": "Ladders & Scaffolding"
+                    },
+                    {
+                        "name": "Lathes"
+                    },
+                    {
+                        "name": "Light Bulb Changers"
+                    },
+                    {
+                        "name": "Lighters & Matches"
+                    },
+                    {
+                        "name": "Log Splitters"
+                    },
+                    {
+                        "name": "Magnetic Sweepers"
+                    },
+                    {
+                        "name": "Marking Tools"
+                    },
+                    {
+                        "name": "Masonry Tools"
+                    },
+                    {
+                        "name": "Mattocks & Pickaxes"
+                    },
+                    {
+                        "name": "Measuring Tools & Sensors"
+                    },
+                    {
+                        "name": "Milling Machines"
+                    },
+                    {
+                        "name": "Multifunction Power Tools"
+                    },
+                    {
+                        "name": "Nail Pullers"
+                    },
+                    {
+                        "name": "Nailers & Staplers"
+                    },
+                    {
+                        "name": "Oil Filter Drains"
+                    },
+                    {
+                        "name": "Paint Tools"
+                    },
+                    {
+                        "name": "Pickup Tools"
+                    },
+                    {
+                        "name": "Pipe & Bar Benders"
+                    },
+                    {
+                        "name": "Pipe & Tube Cleaners"
+                    },
+                    {
+                        "name": "Pipe Brushes"
+                    },
+                    {
+                        "name": "Planers"
+                    },
+                    {
+                        "name": "Planes"
+                    },
+                    {
+                        "name": "Pliers"
+                    },
+                    {
+                        "name": "Plungers"
+                    },
+                    {
+                        "name": "Polishers & Buffers"
+                    },
+                    {
+                        "name": "Post Hole Diggers"
+                    },
+                    {
+                        "name": "Pry Bars"
+                    },
+                    {
+                        "name": "Punches & Awls"
+                    },
+                    {
+                        "name": "Putty Knives & Scrapers"
+                    },
+                    {
+                        "name": "Reamers"
+                    },
+                    {
+                        "name": "Riveting Tools"
+                    },
+                    {
+                        "name": "Routing Tools"
+                    },
+                    {
+                        "name": "Sanders"
+                    },
+                    {
+                        "name": "Sanding Blocks"
+                    },
+                    {
+                        "name": "Saw Horses"
+                    },
+                    {
+                        "name": "Saws"
+                    },
+                    {
+                        "name": "Screwdrivers"
+                    },
+                    {
+                        "name": "Shapers"
+                    },
+                    {
+                        "name": "Sharpeners"
+                    },
+                    {
+                        "name": "Socket Drivers"
+                    },
+                    {
+                        "name": "Soldering Irons"
+                    },
+                    {
+                        "name": "Tap Reseaters"
+                    },
+                    {
+                        "name": "Taps & Dies"
+                    },
+                    {
+                        "name": "Threading Machines"
+                    },
+                    {
+                        "name": "Tool Clamps & Vises"
+                    },
+                    {
+                        "name": "Tool Files"
+                    },
+                    {
+                        "name": "Tool Keys"
+                    },
+                    {
+                        "name": "Tool Knives"
+                    },
+                    {
+                        "name": "Tool Sets"
+                    },
+                    {
+                        "name": "Welding Guns & Plasma Cutters"
+                    },
+                    {
+                        "name": "Wire & Cable Hand Tools"
+                    },
+                    {
+                        "name": "Work Lights"
+                    },
+                    {
+                        "name": "Wrenches"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Health & Beauty",
+        "icon": "lotion-plus",
+        "subCategories": [
+            {
+                "name": "Health Care",
+                "subCategories": [
+                    {
+                        "name": "Acupuncture"
+                    },
+                    {
+                        "name": "Bed Pans"
+                    },
+                    {
+                        "name": "Biometric Monitor Accessories"
+                    },
+                    {
+                        "name": "Biometric Monitors"
+                    },
+                    {
+                        "name": "Condoms"
+                    },
+                    {
+                        "name": "Conductivity Gels & Lotions"
+                    },
+                    {
+                        "name": "Contraceptive Cases"
+                    },
+                    {
+                        "name": "First Aid"
+                    },
+                    {
+                        "name": "Fitness & Nutrition"
+                    },
+                    {
+                        "name": "Hearing Aids"
+                    },
+                    {
+                        "name": "Incontinence Aids"
+                    },
+                    {
+                        "name": "Light Therapy Lamps"
+                    },
+                    {
+                        "name": "Medical Alarm Systems"
+                    },
+                    {
+                        "name": "Medical Identification Tags & Jewelry"
+                    },
+                    {
+                        "name": "Medical Tests"
+                    },
+                    {
+                        "name": "Medicine & Drugs"
+                    },
+                    {
+                        "name": "Mobility & Accessibility"
+                    },
+                    {
+                        "name": "Occupational & Physical Therapy Equipment"
+                    },
+                    {
+                        "name": "Pillboxes"
+                    },
+                    {
+                        "name": "Respiratory Care"
+                    },
+                    {
+                        "name": "Specimen Cups"
+                    },
+                    {
+                        "name": "Spermicides"
+                    },
+                    {
+                        "name": "Stump Shrinkers"
+                    },
+                    {
+                        "name": "Supports & Braces"
+                    },
+                    {
+                        "name": "Surgical Lubricants"
+                    }
+                ]
+            },
+            {
+                "name": "Jewelry Cleaning & Care",
+                "subCategories": [
+                    {
+                        "name": "Jewelry Cleaning Solutions & Polishes"
+                    },
+                    {
+                        "name": "Jewelry Cleaning Tools"
+                    },
+                    {
+                        "name": "Jewelry Holders"
+                    },
+                    {
+                        "name": "Jewelry Steam Cleaners"
+                    },
+                    {
+                        "name": "Watch Repair Kits"
+                    }
+                ]
+            },
+            {
+                "name": "Personal Care",
+                "subCategories": [
+                    {
+                        "name": "Back Care"
+                    },
+                    {
+                        "name": "Cosmetics"
+                    },
+                    {
+                        "name": "Cotton Balls"
+                    },
+                    {
+                        "name": "Cotton Swabs"
+                    },
+                    {
+                        "name": "Deodorant & Anti-Perspirant"
+                    },
+                    {
+                        "name": "Ear Care"
+                    },
+                    {
+                        "name": "Enema Kits & Supplies"
+                    },
+                    {
+                        "name": "Feminine Sanitary Supplies"
+                    },
+                    {
+                        "name": "Foot Care"
+                    },
+                    {
+                        "name": "Hair Care"
+                    },
+                    {
+                        "name": "Massage & Relaxation"
+                    },
+                    {
+                        "name": "Oral Care"
+                    },
+                    {
+                        "name": "Personal Lubricants"
+                    },
+                    {
+                        "name": "Shaving & Grooming"
+                    },
+                    {
+                        "name": "Sleeping Aids"
+                    },
+                    {
+                        "name": "Spray Tanning Tents"
+                    },
+                    {
+                        "name": "Tanning Beds"
+                    },
+                    {
+                        "name": "Tweezers"
+                    },
+                    {
+                        "name": "Vision Care"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Home & Garden",
+        "icon": "leaf",
+        "subCategories": [
+            {
+                "name": "Bathroom Accessories",
+                "subCategories": [
+                    {
+                        "name": "Bath Caddies"
+                    },
+                    {
+                        "name": "Bath Mats & Rugs"
+                    },
+                    {
+                        "name": "Bath Pillows"
+                    },
+                    {
+                        "name": "Bathroom Accessory Mounts"
+                    },
+                    {
+                        "name": "Bathroom Accessory Sets"
+                    },
+                    {
+                        "name": "Facial Tissue Holders"
+                    },
+                    {
+                        "name": "Hand Dryer Accessories"
+                    },
+                    {
+                        "name": "Hand Dryers"
+                    },
+                    {
+                        "name": "Medicine Cabinets"
+                    },
+                    {
+                        "name": "Robe Hooks"
+                    },
+                    {
+                        "name": "Safety Grab Bars"
+                    },
+                    {
+                        "name": "Shower Curtain Rings"
+                    },
+                    {
+                        "name": "Shower Curtains"
+                    },
+                    {
+                        "name": "Shower Rods"
+                    },
+                    {
+                        "name": "Soap & Lotion Dispensers"
+                    },
+                    {
+                        "name": "Soap Dishes & Holders"
+                    },
+                    {
+                        "name": "Toilet Brush Replacement Heads"
+                    },
+                    {
+                        "name": "Toilet Brushes & Holders"
+                    },
+                    {
+                        "name": "Toilet Paper Holders"
+                    },
+                    {
+                        "name": "Toothbrush Holders"
+                    },
+                    {
+                        "name": "Towel Racks & Holders"
+                    }
+                ]
+            },
+            {
+                "name": "Business & Home Security",
+                "subCategories": [
+                    {
+                        "name": "Dummy Surveillance Cameras"
+                    },
+                    {
+                        "name": "Home Alarm Systems"
+                    },
+                    {
+                        "name": "Motion Sensors"
+                    },
+                    {
+                        "name": "Safety & Security Mirrors"
+                    },
+                    {
+                        "name": "Security Lights"
+                    },
+                    {
+                        "name": "Security Monitors & Recorders"
+                    },
+                    {
+                        "name": "Security Safe Accessories"
+                    },
+                    {
+                        "name": "Security Safes"
+                    },
+                    {
+                        "name": "Security System Sensors"
+                    }
+                ]
+            },
+            {
+                "name": "Decor",
+                "subCategories": [
+                    {
+                        "name": "Address Signs"
+                    },
+                    {
+                        "name": "Artificial Flora"
+                    },
+                    {
+                        "name": "Artificial Food"
+                    },
+                    {
+                        "name": "Artwork"
+                    },
+                    {
+                        "name": "Backrest Pillows"
+                    },
+                    {
+                        "name": "Baskets"
+                    },
+                    {
+                        "name": "Bird & Wildlife Feeder Accessories"
+                    },
+                    {
+                        "name": "Bird & Wildlife Feeders"
+                    },
+                    {
+                        "name": "Bird & Wildlife House Accessories"
+                    },
+                    {
+                        "name": "Bird & Wildlife Houses"
+                    },
+                    {
+                        "name": "Bird Baths"
+                    },
+                    {
+                        "name": "Bookends"
+                    },
+                    {
+                        "name": "Cardboard Cutouts"
+                    },
+                    {
+                        "name": "Chair & Sofa Cushions"
+                    },
+                    {
+                        "name": "Clock Parts"
+                    },
+                    {
+                        "name": "Clocks"
+                    },
+                    {
+                        "name": "Coat & Hat Racks"
+                    },
+                    {
+                        "name": "Decorative Bells"
+                    },
+                    {
+                        "name": "Decorative Bottles"
+                    },
+                    {
+                        "name": "Decorative Bowls"
+                    },
+                    {
+                        "name": "Decorative Jars"
+                    },
+                    {
+                        "name": "Decorative Plaques"
+                    },
+                    {
+                        "name": "Decorative Plates"
+                    },
+                    {
+                        "name": "Decorative Trays"
+                    },
+                    {
+                        "name": "Door Mats"
+                    },
+                    {
+                        "name": "Dreamcatchers"
+                    },
+                    {
+                        "name": "Dried Flowers"
+                    },
+                    {
+                        "name": "Ecospheres"
+                    },
+                    {
+                        "name": "Figurines"
+                    },
+                    {
+                        "name": "Finials"
+                    },
+                    {
+                        "name": "Flag & Windsock Accessories"
+                    },
+                    {
+                        "name": "Flags & Windsocks"
+                    },
+                    {
+                        "name": "Flameless Candles"
+                    },
+                    {
+                        "name": "Fountains & Ponds"
+                    },
+                    {
+                        "name": "Garden & Stepping Stones"
+                    },
+                    {
+                        "name": "Growth Charts"
+                    },
+                    {
+                        "name": "Home Decor Decals"
+                    },
+                    {
+                        "name": "Home Fragrance Accessories"
+                    },
+                    {
+                        "name": "Home Fragrances"
+                    },
+                    {
+                        "name": "Hourglasses"
+                    },
+                    {
+                        "name": "House Numbers & Letters"
+                    },
+                    {
+                        "name": "Lawn Ornaments & Garden Sculptures"
+                    },
+                    {
+                        "name": "Mail Slots"
+                    },
+                    {
+                        "name": "Mailbox Accessories"
+                    },
+                    {
+                        "name": "Mailboxes"
+                    },
+                    {
+                        "name": "Mirrors"
+                    },
+                    {
+                        "name": "Music Boxes"
+                    },
+                    {
+                        "name": "Napkin Rings"
+                    },
+                    {
+                        "name": "Novelty Signs"
+                    },
+                    {
+                        "name": "Ottoman Cushions"
+                    },
+                    {
+                        "name": "Picture Frames"
+                    },
+                    {
+                        "name": "Piggy Banks & Money Jars"
+                    },
+                    {
+                        "name": "Rain Chains"
+                    },
+                    {
+                        "name": "Rain Gauges"
+                    },
+                    {
+                        "name": "Refrigerator Magnets"
+                    },
+                    {
+                        "name": "Rugs"
+                    },
+                    {
+                        "name": "Seasonal & Holiday Decorations"
+                    },
+                    {
+                        "name": "Shadow Boxes"
+                    },
+                    {
+                        "name": "Slipcovers"
+                    },
+                    {
+                        "name": "Snow Globes"
+                    },
+                    {
+                        "name": "Suncatchers"
+                    },
+                    {
+                        "name": "Sundials"
+                    },
+                    {
+                        "name": "Throw Pillows"
+                    },
+                    {
+                        "name": "Trunks"
+                    },
+                    {
+                        "name": "Vase Fillers & Table Scatters"
+                    },
+                    {
+                        "name": "Vases"
+                    },
+                    {
+                        "name": "Wallpaper"
+                    },
+                    {
+                        "name": "Weather Vanes & Roof Decor"
+                    },
+                    {
+                        "name": "Wind Chimes"
+                    },
+                    {
+                        "name": "Wind Wheels & Spinners"
+                    },
+                    {
+                        "name": "Window Magnets"
+                    },
+                    {
+                        "name": "Window Treatment Accessories"
+                    },
+                    {
+                        "name": "Window Treatments"
+                    },
+                    {
+                        "name": "World Globes"
+                    },
+                    {
+                        "name": "Wreaths & Garlands"
+                    }
+                ]
+            },
+            {
+                "name": "Emergency Preparedness",
+                "subCategories": [
+                    {
+                        "name": "Earthquake Alarms"
+                    },
+                    {
+                        "name": "Emergency Blankets"
+                    },
+                    {
+                        "name": "Emergency Food Kits"
+                    },
+                    {
+                        "name": "Emergency Tools & Kits"
+                    },
+                    {
+                        "name": "Furniture Anchors"
+                    }
+                ]
+            },
+            {
+                "name": "Fireplace & Wood Stove Accessories",
+                "subCategories": [
+                    {
+                        "name": "Bellows"
+                    },
+                    {
+                        "name": "Fireplace & Wood Stove Grates"
+                    },
+                    {
+                        "name": "Fireplace Andirons"
+                    },
+                    {
+                        "name": "Fireplace Reflectors"
+                    },
+                    {
+                        "name": "Fireplace Screens"
+                    },
+                    {
+                        "name": "Fireplace Tools"
+                    },
+                    {
+                        "name": "Firewood & Fuel"
+                    },
+                    {
+                        "name": "Hearth Pads"
+                    },
+                    {
+                        "name": "Log Rack & Carrier Accessories"
+                    },
+                    {
+                        "name": "Log Racks & Carriers"
+                    },
+                    {
+                        "name": "Wood Stove Fans & Blowers"
+                    }
+                ]
+            },
+            {
+                "name": "Fireplaces",
+                "subCategories": []
+            },
+            {
+                "name": "Flood, Fire & Gas Safety",
+                "subCategories": [
+                    {
+                        "name": "Fire Alarm Control Panels"
+                    },
+                    {
+                        "name": "Fire Alarms"
+                    },
+                    {
+                        "name": "Fire Extinguisher & Equipment Storage"
+                    },
+                    {
+                        "name": "Fire Extinguishers"
+                    },
+                    {
+                        "name": "Fire Sprinklers"
+                    },
+                    {
+                        "name": "Heat Detectors"
+                    },
+                    {
+                        "name": "Smoke & Carbon Monoxide Detectors"
+                    },
+                    {
+                        "name": "Water & Flood Detectors"
+                    }
+                ]
+            },
+            {
+                "name": "Household Appliance Accessories",
+                "subCategories": [
+                    {
+                        "name": "Air Conditioner Accessories"
+                    },
+                    {
+                        "name": "Air Purifier Accessories"
+                    },
+                    {
+                        "name": "Dehumidifier Accessories"
+                    },
+                    {
+                        "name": "Fan Accessories"
+                    },
+                    {
+                        "name": "Floor & Steam Cleaner Accessories"
+                    },
+                    {
+                        "name": "Furnace & Boiler Accessories"
+                    },
+                    {
+                        "name": "Heating Radiator Accessories"
+                    },
+                    {
+                        "name": "Humidifier Accessories"
+                    },
+                    {
+                        "name": "Laundry Appliance Accessories"
+                    },
+                    {
+                        "name": "Patio Heater Accessories"
+                    },
+                    {
+                        "name": "Vacuum Accessories"
+                    },
+                    {
+                        "name": "Water Heater Accessories"
+                    }
+                ]
+            },
+            {
+                "name": "Household Appliances",
+                "subCategories": [
+                    {
+                        "name": "Climate Control Appliances"
+                    },
+                    {
+                        "name": "Floor & Carpet Dryers"
+                    },
+                    {
+                        "name": "Floor & Steam Cleaners"
+                    },
+                    {
+                        "name": "Floor Polishers & Buffers"
+                    },
+                    {
+                        "name": "Futon Dryers"
+                    },
+                    {
+                        "name": "Garage Door Keypads & Remotes"
+                    },
+                    {
+                        "name": "Garage Door Openers"
+                    },
+                    {
+                        "name": "Laundry Appliances"
+                    },
+                    {
+                        "name": "Ultrasonic Cleaners"
+                    },
+                    {
+                        "name": "Vacuums"
+                    },
+                    {
+                        "name": "Wallpaper Steamers"
+                    },
+                    {
+                        "name": "Water Heaters"
+                    }
+                ]
+            },
+            {
+                "name": "Household Supplies",
+                "subCategories": [
+                    {
+                        "name": "Drawer & Shelf Liners"
+                    },
+                    {
+                        "name": "Floor Protection Films & Runners"
+                    },
+                    {
+                        "name": "Furniture Floor Protectors"
+                    },
+                    {
+                        "name": "Garage Floor Mats"
+                    },
+                    {
+                        "name": "Garbage Bags"
+                    },
+                    {
+                        "name": "Household Cleaning Supplies"
+                    },
+                    {
+                        "name": "Household Paper Products"
+                    },
+                    {
+                        "name": "Household Thermometers"
+                    },
+                    {
+                        "name": "Laundry Supplies"
+                    },
+                    {
+                        "name": "Moisture Absorbers"
+                    },
+                    {
+                        "name": "Pest Control"
+                    },
+                    {
+                        "name": "Rug Pads"
+                    },
+                    {
+                        "name": "Shoe Care & Tools"
+                    },
+                    {
+                        "name": "Stair Treads"
+                    },
+                    {
+                        "name": "Storage & Organization"
+                    },
+                    {
+                        "name": "Trash Compactor Accessories"
+                    },
+                    {
+                        "name": "Waste Containment"
+                    },
+                    {
+                        "name": "Waste Containment Accessories"
+                    }
+                ]
+            },
+            {
+                "name": "Kitchen & Dining",
+                "subCategories": [
+                    {
+                        "name": "Barware"
+                    },
+                    {
+                        "name": "Cookware & Bakeware"
+                    },
+                    {
+                        "name": "Food & Beverage Carriers"
+                    },
+                    {
+                        "name": "Food Storage"
+                    },
+                    {
+                        "name": "Food Storage Accessories"
+                    },
+                    {
+                        "name": "Kitchen Appliance Accessories"
+                    },
+                    {
+                        "name": "Kitchen Appliances"
+                    },
+                    {
+                        "name": "Kitchen Tools & Utensils"
+                    },
+                    {
+                        "name": "Prefabricated Kitchens & Kitchenettes"
+                    },
+                    {
+                        "name": "Tableware"
+                    }
+                ]
+            },
+            {
+                "name": "Lawn & Garden",
+                "subCategories": [
+                    {
+                        "name": "Gardening"
+                    },
+                    {
+                        "name": "Outdoor Living"
+                    },
+                    {
+                        "name": "Outdoor Power Equipment"
+                    },
+                    {
+                        "name": "Outdoor Power Equipment Accessories"
+                    },
+                    {
+                        "name": "Snow Removal"
+                    },
+                    {
+                        "name": "Watering & Irrigation"
+                    }
+                ]
+            },
+            {
+                "name": "Lighting",
+                "subCategories": [
+                    {
+                        "name": "Emergency Lighting"
+                    },
+                    {
+                        "name": "Floating & Submersible Lights"
+                    },
+                    {
+                        "name": "Flood & Spot Lights"
+                    },
+                    {
+                        "name": "In-Ground Lights"
+                    },
+                    {
+                        "name": "Lamps"
+                    },
+                    {
+                        "name": "Landscape Pathway Lighting"
+                    },
+                    {
+                        "name": "Light Bulbs"
+                    },
+                    {
+                        "name": "Light Ropes & Strings"
+                    },
+                    {
+                        "name": "Lighting Fixtures"
+                    },
+                    {
+                        "name": "Night Lights & Ambient Lighting"
+                    },
+                    {
+                        "name": "Picture Lights"
+                    },
+                    {
+                        "name": "Tiki Torches & Oil Lamps"
+                    },
+                    {
+                        "name": "Track Lighting"
+                    }
+                ]
+            },
+            {
+                "name": "Lighting Accessories",
+                "subCategories": [
+                    {
+                        "name": "Lamp Post Bases"
+                    },
+                    {
+                        "name": "Lamp Post Mounts"
+                    },
+                    {
+                        "name": "Lamp Shades"
+                    },
+                    {
+                        "name": "Lighting Timers"
+                    },
+                    {
+                        "name": "Oil Lamp Fuel"
+                    }
+                ]
+            },
+            {
+                "name": "Linens & Bedding",
+                "subCategories": [
+                    {
+                        "name": "Bedding"
+                    },
+                    {
+                        "name": "Kitchen Linens Sets"
+                    },
+                    {
+                        "name": "Table Linens"
+                    },
+                    {
+                        "name": "Towels"
+                    }
+                ]
+            },
+            {
+                "name": "Parasols & Rain Umbrellas",
+                "subCategories": []
+            },
+            {
+                "name": "Plants",
+                "subCategories": [
+                    {
+                        "name": "Aquatic Plants"
+                    },
+                    {
+                        "name": "Flowers"
+                    },
+                    {
+                        "name": "Indoor & Outdoor Plants"
+                    },
+                    {
+                        "name": "Plant & Herb Growing Kits"
+                    },
+                    {
+                        "name": "Seeds"
+                    },
+                    {
+                        "name": "Trees"
+                    }
+                ]
+            },
+            {
+                "name": "Pool & Spa",
+                "subCategories": [
+                    {
+                        "name": "Pool & Spa Accessories"
+                    },
+                    {
+                        "name": "Sauna Accessories"
+                    },
+                    {
+                        "name": "Saunas"
+                    },
+                    {
+                        "name": "Spas"
+                    },
+                    {
+                        "name": "Swimming Pools"
+                    }
+                ]
+            },
+            {
+                "name": "Smoking Accessories",
+                "subCategories": [
+                    {
+                        "name": "Ashtrays"
+                    },
+                    {
+                        "name": "Cigar Cases"
+                    },
+                    {
+                        "name": "Cigar Cutters & Punches"
+                    },
+                    {
+                        "name": "Cigarette Cases"
+                    },
+                    {
+                        "name": "Cigarette Holders"
+                    },
+                    {
+                        "name": "Humidor Accessories"
+                    },
+                    {
+                        "name": "Humidors"
+                    }
+                ]
+            },
+            {
+                "name": "Umbrella Sleeves & Cases",
+                "subCategories": []
+            },
+            {
+                "name": "Wood Stoves",
+                "subCategories": []
+            }
+        ]
+    },
+    {
+        "name": "Luggage & Bags",
+        "icon": "bag-suitcase",
+        "subCategories": [
+            {
+                "name": "Backpacks",
+                "subCategories": []
+            },
+            {
+                "name": "Briefcases",
+                "subCategories": []
+            },
+            {
+                "name": "Cosmetic & Toiletry Bags",
+                "subCategories": []
+            },
+            {
+                "name": "Diaper Bags",
+                "subCategories": []
+            },
+            {
+                "name": "Dry Boxes",
+                "subCategories": []
+            },
+            {
+                "name": "Duffel Bags",
+                "subCategories": []
+            },
+            {
+                "name": "Fanny Packs",
+                "subCategories": []
+            },
+            {
+                "name": "Garment Bags",
+                "subCategories": []
+            },
+            {
+                "name": "Luggage Accessories",
+                "subCategories": [
+                    {
+                        "name": "Dry Box Liners & Inserts"
+                    },
+                    {
+                        "name": "Luggage Covers"
+                    },
+                    {
+                        "name": "Luggage Racks & Stands"
+                    },
+                    {
+                        "name": "Luggage Straps"
+                    },
+                    {
+                        "name": "Luggage Tags"
+                    },
+                    {
+                        "name": "Packing Organizers"
+                    },
+                    {
+                        "name": "Travel Bottles & Containers"
+                    },
+                    {
+                        "name": "Travel Pouches"
+                    }
+                ]
+            },
+            {
+                "name": "Messenger Bags",
+                "subCategories": []
+            },
+            {
+                "name": "Shopping Totes",
+                "subCategories": []
+            },
+            {
+                "name": "Suitcases",
+                "subCategories": []
+            },
+            {
+                "name": "Train Cases",
+                "subCategories": []
+            }
+        ]
+    },
+    {
+        "name": "Media",
+        "icon": "desktop-classic",
+        "subCategories": [
+            {
+                "name": "Books",
+                "subCategories": [
+                    {
+                        "name": "Audiobooks"
+                    },
+                    {
+                        "name": "E-books"
+                    },
+                    {
+                        "name": "Print Books"
+                    }
+                ]
+            },
+            {
+                "name": "Carpentry & Woodworking Project Plans",
+                "subCategories": []
+            },
+            {
+                "name": "DVDs & Videos",
+                "subCategories": [
+                    {
+                        "name": "Film & Television DVDs"
+                    },
+                    {
+                        "name": "Film & Television Digital Downloads"
+                    },
+                    {
+                        "name": "Film & Television VHS Tapes"
+                    }
+                ]
+            },
+            {
+                "name": "Magazines & Newspapers",
+                "subCategories": [
+                    {
+                        "name": "Magazines"
+                    },
+                    {
+                        "name": "Newspapers"
+                    }
+                ]
+            },
+            {
+                "name": "Music & Sound Recordings",
+                "subCategories": [
+                    {
+                        "name": "Digital Music Downloads"
+                    },
+                    {
+                        "name": "Music CDs"
+                    },
+                    {
+                        "name": "Music Cassette Tapes"
+                    },
+                    {
+                        "name": "Records & LPs"
+                    },
+                    {
+                        "name": "Spoken Word & Field Recordings"
+                    }
+                ]
+            },
+            {
+                "name": "Product Manuals",
+                "subCategories": [
+                    {
+                        "name": "Camera & Optics Manuals"
+                    },
+                    {
+                        "name": "Electronics Manuals"
+                    },
+                    {
+                        "name": "Exercise & Fitness Equipment Manuals"
+                    },
+                    {
+                        "name": "Household Appliance Manuals"
+                    },
+                    {
+                        "name": "Kitchen Appliance Manuals"
+                    },
+                    {
+                        "name": "Model & Toys Manuals"
+                    },
+                    {
+                        "name": "Office Supply Manuals"
+                    },
+                    {
+                        "name": "Power Tool & Equipment Manuals"
+                    },
+                    {
+                        "name": "Vehicle Service Manuals"
+                    }
+                ]
+            },
+            {
+                "name": "Sheet Music",
+                "subCategories": []
+            }
+        ]
+    },
+    {
+        "name": "Office Supplies",
+        "icon": "desk",
+        "subCategories": [
+            {
+                "name": "Book Accessories",
+                "subCategories": [
+                    {
+                        "name": "Book Covers"
+                    },
+                    {
+                        "name": "Book Lights"
+                    },
+                    {
+                        "name": "Book Stands & Rests"
+                    },
+                    {
+                        "name": "Bookmarks"
+                    }
+                ]
+            },
+            {
+                "name": "Desk Pads & Blotters",
+                "subCategories": []
+            },
+            {
+                "name": "Filing & Organization",
+                "subCategories": [
+                    {
+                        "name": "Address Books"
+                    },
+                    {
+                        "name": "Binding Supplies"
+                    },
+                    {
+                        "name": "Business Card Books"
+                    },
+                    {
+                        "name": "Business Card Stands"
+                    },
+                    {
+                        "name": "CD/DVD Cases & Organizers"
+                    },
+                    {
+                        "name": "Calendars, Organizers & Planners"
+                    },
+                    {
+                        "name": "Card Files"
+                    },
+                    {
+                        "name": "Card Sleeves"
+                    },
+                    {
+                        "name": "Cash Boxes"
+                    },
+                    {
+                        "name": "Desk Organizers"
+                    },
+                    {
+                        "name": "File Boxes"
+                    },
+                    {
+                        "name": "File Folders"
+                    },
+                    {
+                        "name": "Folders & Report Covers"
+                    },
+                    {
+                        "name": "Greeting Card Organizers"
+                    },
+                    {
+                        "name": "Mail Sorters"
+                    },
+                    {
+                        "name": "Pen & Pencil Cases"
+                    },
+                    {
+                        "name": "Portfolios & Padfolios"
+                    },
+                    {
+                        "name": "Recipe Card Boxes"
+                    }
+                ]
+            },
+            {
+                "name": "General Office Supplies",
+                "subCategories": [
+                    {
+                        "name": "Brass Fasteners"
+                    },
+                    {
+                        "name": "Correction Fluids, Pens & Tapes"
+                    },
+                    {
+                        "name": "Erasers"
+                    },
+                    {
+                        "name": "Labels & Tags"
+                    },
+                    {
+                        "name": "Laminating Film, Pouches & Sheets"
+                    },
+                    {
+                        "name": "Mounting Putty"
+                    },
+                    {
+                        "name": "Office Tape"
+                    },
+                    {
+                        "name": "Paper Clips & Clamps"
+                    },
+                    {
+                        "name": "Paper Products"
+                    },
+                    {
+                        "name": "Rubber Bands"
+                    },
+                    {
+                        "name": "Staples"
+                    },
+                    {
+                        "name": "Tacks & Pushpins"
+                    }
+                ]
+            },
+            {
+                "name": "Impulse Sealers",
+                "subCategories": []
+            },
+            {
+                "name": "Lap Desks",
+                "subCategories": []
+            },
+            {
+                "name": "Name Plates",
+                "subCategories": []
+            },
+            {
+                "name": "Office & Chair Mats",
+                "subCategories": [
+                    {
+                        "name": "Anti-Fatigue Mats"
+                    },
+                    {
+                        "name": "Chair Mats"
+                    },
+                    {
+                        "name": "Office Mats"
+                    }
+                ]
+            },
+            {
+                "name": "Office Carts",
+                "subCategories": [
+                    {
+                        "name": "AV Carts"
+                    },
+                    {
+                        "name": "Book Carts"
+                    },
+                    {
+                        "name": "File Carts"
+                    },
+                    {
+                        "name": "Mail Carts"
+                    },
+                    {
+                        "name": "Utility Carts"
+                    }
+                ]
+            },
+            {
+                "name": "Office Equipment",
+                "subCategories": [
+                    {
+                        "name": "Calculator Accessories"
+                    },
+                    {
+                        "name": "Calculators"
+                    },
+                    {
+                        "name": "Electronic Dictionaries & Translators"
+                    },
+                    {
+                        "name": "Label Makers"
+                    },
+                    {
+                        "name": "Laminators"
+                    },
+                    {
+                        "name": "Office Shredders"
+                    },
+                    {
+                        "name": "Postage Meters"
+                    },
+                    {
+                        "name": "Time & Attendance Clocks"
+                    },
+                    {
+                        "name": "Transcribers & Dictation Systems"
+                    },
+                    {
+                        "name": "Typewriters"
+                    }
+                ]
+            },
+            {
+                "name": "Office Instruments",
+                "subCategories": [
+                    {
+                        "name": "Call Bells"
+                    },
+                    {
+                        "name": "Clipboards"
+                    },
+                    {
+                        "name": "Letter Openers"
+                    },
+                    {
+                        "name": "Magnifiers"
+                    },
+                    {
+                        "name": "Office Rubber Stamps"
+                    },
+                    {
+                        "name": "Pencil Sharpeners"
+                    },
+                    {
+                        "name": "Staple Removers"
+                    },
+                    {
+                        "name": "Staplers"
+                    },
+                    {
+                        "name": "Tape Dispensers"
+                    },
+                    {
+                        "name": "Writing & Drawing Instrument Accessories"
+                    },
+                    {
+                        "name": "Writing & Drawing Instruments"
+                    }
+                ]
+            },
+            {
+                "name": "Paper Handling",
+                "subCategories": [
+                    {
+                        "name": "Fingertip Grips"
+                    },
+                    {
+                        "name": "Hole Punches"
+                    },
+                    {
+                        "name": "Paper Folding Machines"
+                    },
+                    {
+                        "name": "Paper Joggers"
+                    },
+                    {
+                        "name": "Paperweights"
+                    },
+                    {
+                        "name": "Pencil Boards"
+                    }
+                ]
+            },
+            {
+                "name": "Presentation Supplies",
+                "subCategories": [
+                    {
+                        "name": "Chalkboards"
+                    },
+                    {
+                        "name": "Display Boards"
+                    },
+                    {
+                        "name": "Document Cameras"
+                    },
+                    {
+                        "name": "Dry-Erase Boards"
+                    },
+                    {
+                        "name": "Easel Pads"
+                    },
+                    {
+                        "name": "Easels"
+                    },
+                    {
+                        "name": "Laser Pointers"
+                    },
+                    {
+                        "name": "Lecterns"
+                    },
+                    {
+                        "name": "Transparencies"
+                    },
+                    {
+                        "name": "Wireless Presenters"
+                    }
+                ]
+            },
+            {
+                "name": "Shipping Supplies",
+                "subCategories": [
+                    {
+                        "name": "Moving & Shipping Boxes"
+                    },
+                    {
+                        "name": "Packing Materials"
+                    },
+                    {
+                        "name": "Packing Tape"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Sporting Goods",
+        "icon": "bike-fast",
+        "subCategories": [
+            {
+                "name": "Athletics",
+                "subCategories": [
+                    {
+                        "name": "American Football"
+                    },
+                    {
+                        "name": "Baseball & Softball"
+                    },
+                    {
+                        "name": "Basketball"
+                    },
+                    {
+                        "name": "Boxing & Martial Arts"
+                    },
+                    {
+                        "name": "Broomball Equipment"
+                    },
+                    {
+                        "name": "Cheerleading"
+                    },
+                    {
+                        "name": "Coaching & Officiating"
+                    },
+                    {
+                        "name": "Cricket"
+                    },
+                    {
+                        "name": "Dancing"
+                    },
+                    {
+                        "name": "Fencing"
+                    },
+                    {
+                        "name": "Field Hockey & Lacrosse"
+                    },
+                    {
+                        "name": "Figure Skating & Hockey"
+                    },
+                    {
+                        "name": "General Purpose Athletic Equipment"
+                    },
+                    {
+                        "name": "Gymnastics"
+                    },
+                    {
+                        "name": "Racquetball & Squash"
+                    },
+                    {
+                        "name": "Rounders"
+                    },
+                    {
+                        "name": "Rugby"
+                    },
+                    {
+                        "name": "Soccer"
+                    },
+                    {
+                        "name": "Team Handball"
+                    },
+                    {
+                        "name": "Tennis"
+                    },
+                    {
+                        "name": "Track & Field"
+                    },
+                    {
+                        "name": "Volleyball"
+                    },
+                    {
+                        "name": "Wallyball Equipment"
+                    },
+                    {
+                        "name": "Water Polo"
+                    },
+                    {
+                        "name": "Wrestling"
+                    }
+                ]
+            },
+            {
+                "name": "Exercise & Fitness",
+                "subCategories": [
+                    {
+                        "name": "Ab Wheels & Rollers"
+                    },
+                    {
+                        "name": "Aerobic Steps"
+                    },
+                    {
+                        "name": "Balance Trainers"
+                    },
+                    {
+                        "name": "Cardio"
+                    },
+                    {
+                        "name": "Exercise Balls"
+                    },
+                    {
+                        "name": "Exercise Bands"
+                    },
+                    {
+                        "name": "Exercise Benches"
+                    },
+                    {
+                        "name": "Exercise Equipment Mats"
+                    },
+                    {
+                        "name": "Exercise Machine & Equipment Sets"
+                    },
+                    {
+                        "name": "Exercise Wedges"
+                    },
+                    {
+                        "name": "Foam Roller Accessories"
+                    },
+                    {
+                        "name": "Foam Rollers"
+                    },
+                    {
+                        "name": "Hand Exercisers"
+                    },
+                    {
+                        "name": "Inversion Tables & Systems"
+                    },
+                    {
+                        "name": "Medicine Balls"
+                    },
+                    {
+                        "name": "Power Towers"
+                    },
+                    {
+                        "name": "Push Up & Pull Up Bars"
+                    },
+                    {
+                        "name": "Reaction Balls"
+                    },
+                    {
+                        "name": "Speed & Resistance Parachutes"
+                    },
+                    {
+                        "name": "Sport Safety Lights & Reflectors"
+                    },
+                    {
+                        "name": "Stopwatches"
+                    },
+                    {
+                        "name": "Suspension Trainers"
+                    },
+                    {
+                        "name": "Vibration Exercise Machines"
+                    },
+                    {
+                        "name": "Weight Lifting"
+                    },
+                    {
+                        "name": "Weighted Clothing"
+                    },
+                    {
+                        "name": "Yoga & Pilates"
+                    }
+                ]
+            },
+            {
+                "name": "Indoor Games",
+                "subCategories": [
+                    {
+                        "name": "Air Hockey"
+                    },
+                    {
+                        "name": "Billiards"
+                    },
+                    {
+                        "name": "Bowling"
+                    },
+                    {
+                        "name": "Foosball"
+                    },
+                    {
+                        "name": "Multi-Game Tables"
+                    },
+                    {
+                        "name": "Ping Pong"
+                    },
+                    {
+                        "name": "Table Shuffleboard"
+                    },
+                    {
+                        "name": "Throwing Darts"
+                    }
+                ]
+            },
+            {
+                "name": "Outdoor Recreation",
+                "subCategories": [
+                    {
+                        "name": "Boating & Water Sports"
+                    },
+                    {
+                        "name": "Camping & Hiking"
+                    },
+                    {
+                        "name": "Climbing"
+                    },
+                    {
+                        "name": "Cycling"
+                    },
+                    {
+                        "name": "Equestrian"
+                    },
+                    {
+                        "name": "Fishing"
+                    },
+                    {
+                        "name": "Golf"
+                    },
+                    {
+                        "name": "Hang Gliding & Skydiving"
+                    },
+                    {
+                        "name": "Hunting & Shooting"
+                    },
+                    {
+                        "name": "Hydration System Accessories"
+                    },
+                    {
+                        "name": "Hydration Systems"
+                    },
+                    {
+                        "name": "Inline & Roller Skating"
+                    },
+                    {
+                        "name": "Kite Buggying"
+                    },
+                    {
+                        "name": "Outdoor Games"
+                    },
+                    {
+                        "name": "Riding Scooters"
+                    },
+                    {
+                        "name": "Skateboarding"
+                    },
+                    {
+                        "name": "Winter Sports & Activities"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Toys & Games",
+        "icon": "gamepad-variant",
+        "subCategories": [
+            {
+                "name": "Game Timers",
+                "subCategories": []
+            },
+            {
+                "name": "Games",
+                "subCategories": [
+                    {
+                        "name": "Battle Top Accessories"
+                    },
+                    {
+                        "name": "Battle Tops"
+                    },
+                    {
+                        "name": "Bingo Sets"
+                    },
+                    {
+                        "name": "Blackjack & Craps Sets"
+                    },
+                    {
+                        "name": "Board Games"
+                    },
+                    {
+                        "name": "Card Game Accessories"
+                    },
+                    {
+                        "name": "Card Games"
+                    },
+                    {
+                        "name": "Dexterity Games"
+                    },
+                    {
+                        "name": "Dice Sets & Games"
+                    },
+                    {
+                        "name": "Poker Chip Accessories"
+                    },
+                    {
+                        "name": "Poker Chips & Sets"
+                    },
+                    {
+                        "name": "Portable Electronic Games"
+                    },
+                    {
+                        "name": "Roulette Wheels & Sets"
+                    },
+                    {
+                        "name": "Slot Machines"
+                    },
+                    {
+                        "name": "Tile Games"
+                    }
+                ]
+            },
+            {
+                "name": "Outdoor Play Equipment",
+                "subCategories": [
+                    {
+                        "name": "Inflatable Bouncer Accessories"
+                    },
+                    {
+                        "name": "Inflatable Bouncers"
+                    },
+                    {
+                        "name": "Play Swings"
+                    },
+                    {
+                        "name": "Play Tents & Tunnels"
+                    },
+                    {
+                        "name": "Playhouses"
+                    },
+                    {
+                        "name": "Pogo Sticks"
+                    },
+                    {
+                        "name": "Sandboxes"
+                    },
+                    {
+                        "name": "See Saws"
+                    },
+                    {
+                        "name": "Slides"
+                    },
+                    {
+                        "name": "Stilts"
+                    },
+                    {
+                        "name": "Swing Set & Playset Accessories"
+                    },
+                    {
+                        "name": "Swing Sets & Playsets"
+                    },
+                    {
+                        "name": "Trampoline Accessories"
+                    },
+                    {
+                        "name": "Trampolines"
+                    },
+                    {
+                        "name": "Water Play Equipment"
+                    }
+                ]
+            },
+            {
+                "name": "Puzzles",
+                "subCategories": [
+                    {
+                        "name": "Jigsaw Puzzle Accessories"
+                    },
+                    {
+                        "name": "Jigsaw Puzzles"
+                    },
+                    {
+                        "name": "Mechanical Puzzles"
+                    },
+                    {
+                        "name": "Wooden & Pegged Puzzles"
+                    }
+                ]
+            },
+            {
+                "name": "Toys",
+                "subCategories": [
+                    {
+                        "name": "Activity Toys"
+                    },
+                    {
+                        "name": "Art & Drawing Toys"
+                    },
+                    {
+                        "name": "Ball Pit Accessories"
+                    },
+                    {
+                        "name": "Ball Pits"
+                    },
+                    {
+                        "name": "Bath Toys"
+                    },
+                    {
+                        "name": "Beach & Sand Toys"
+                    },
+                    {
+                        "name": "Building Toys"
+                    },
+                    {
+                        "name": "Dolls, Playsets & Toy Figures"
+                    },
+                    {
+                        "name": "Educational Toys"
+                    },
+                    {
+                        "name": "Executive Toys"
+                    },
+                    {
+                        "name": "Flying Toy Accessories"
+                    },
+                    {
+                        "name": "Flying Toys"
+                    },
+                    {
+                        "name": "Musical Toys"
+                    },
+                    {
+                        "name": "Play Vehicle Accessories"
+                    },
+                    {
+                        "name": "Play Vehicles"
+                    },
+                    {
+                        "name": "Pretend Play"
+                    },
+                    {
+                        "name": "Remote Control Toy Accessories"
+                    },
+                    {
+                        "name": "Remote Control Toys"
+                    },
+                    {
+                        "name": "Riding Toy Accessories"
+                    },
+                    {
+                        "name": "Riding Toys"
+                    },
+                    {
+                        "name": "Robotic Toys"
+                    },
+                    {
+                        "name": "Sports Toy Accessories"
+                    },
+                    {
+                        "name": "Sports Toys"
+                    },
+                    {
+                        "name": "Toy Gift Baskets"
+                    },
+                    {
+                        "name": "Toy Weapon & Gadget Accessories"
+                    },
+                    {
+                        "name": "Toy Weapons & Gadgets"
+                    },
+                    {
+                        "name": "Visual Toys"
+                    },
+                    {
+                        "name": "Wind-Up Toys"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Vehicles & Parts",
+        "icon": "car",
+        "subCategories": [
+            {
+                "name": "Vehicle Parts & Accessories",
+                "subCategories": [
+                    {
+                        "name": "Aircraft Parts & Accessories"
+                    },
+                    {
+                        "name": "Motor Vehicle Electronics"
+                    },
+                    {
+                        "name": "Motor Vehicle Parts"
+                    },
+                    {
+                        "name": "Vehicle Maintenance, Care & Decor"
+                    },
+                    {
+                        "name": "Vehicle Safety & Security"
+                    },
+                    {
+                        "name": "Vehicle Storage & Cargo"
+                    },
+                    {
+                        "name": "Watercraft Parts & Accessories"
+                    }
+                ]
+            },
+            {
+                "name": "Vehicles",
+                "subCategories": [
+                    {
+                        "name": "Aircraft"
+                    },
+                    {
+                        "name": "Motor Vehicles"
+                    },
+                    {
+                        "name": "Watercraft"
+                    }
+                ]
+            }
+        ]
+    }
+]
