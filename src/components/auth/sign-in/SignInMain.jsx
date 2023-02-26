@@ -9,9 +9,10 @@ import {
     Icon,
     ScrollView,
     Center,
+    Input,
 } from "native-base";
 import { Ionicons } from "react-native-vector-icons";
-import React, { useEffect, useState } from "react";
+import React, { forwardRef, useEffect, useRef, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { AuthInput } from "./AuthInput";
 import { omit } from "lodash";
@@ -67,6 +68,7 @@ const SignInMain = () => {
 };
 
 const SignInForm = () => {
+    const passwordRef = useRef(null);
     const [loading, setLoading] = useState(false);
     const [user, setUser] = useState({});
     const updateUser = (param, val) => {
@@ -75,8 +77,8 @@ const SignInForm = () => {
     };
     const setEmail = (e) => updateUser("email", e);
     const setPassword = (e) => updateUser("password", e);
-
     const [canSubmit, setCanSubmit] = useState(false);
+
     const updateCanSubmit = () => {
         setCanSubmit(user.email != null && user.password != null && !loading);
     };
@@ -85,11 +87,18 @@ const SignInForm = () => {
         updateCanSubmit();
     }, [user]);
 
+    useEffect(() => {
+        console.log(passwordRef);
+    }, [passwordRef]);
+
     const handleSubmit = async () => {
         setLoading(true);
-        await attemptSignIn(user);
+        await attemptSignIn(user).catch((e) => {
+            console.log(e);
+        });
         setLoading(false);
     };
+
     const OrDivider = () => {
         return (
             <HStack alignItems={"center"} space={2}>
@@ -101,14 +110,23 @@ const SignInForm = () => {
             </HStack>
         );
     };
+
     return (
         <VStack space={4} w={"full"}>
-            <AuthInput label={"Email"} onChangeText={setEmail} />
+            <AuthInput
+                label={"Email"}
+                onChangeText={setEmail}
+                onSubmitEditing={() => passwordRef.current.focus()}
+                returnKeyType={"next"}
+                blurOnSubmit={false}
+            />
             <VStack>
                 <AuthInput
                     onChangeText={setPassword}
                     label={"Password"}
                     isPassword
+                    ref={passwordRef}
+                    onSubmitEditing={handleSubmit}
                 />
                 <Button
                     variant={"link"}
