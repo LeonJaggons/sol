@@ -1,8 +1,8 @@
 import { View, Text } from "react-native";
-import React from "react";
+import React, { forwardRef } from "react";
 import { Input, TextArea } from "native-base";
 
-const SolInput = (props) => {
+const SolInput = forwardRef((props, ref) => {
     return (
         <Input
             borderRadius={0}
@@ -13,9 +13,9 @@ const SolInput = (props) => {
             {...props}
         />
     );
-};
+});
 
-export const SolTextArea = (props) => {
+export const SolTextArea = forwardRef((props) => {
     return (
         <TextArea
             borderRadius={0}
@@ -26,5 +26,5 @@ export const SolTextArea = (props) => {
             {...props}
         />
     );
-};
+});
 export default SolInput;

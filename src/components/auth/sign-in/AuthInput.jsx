@@ -1,14 +1,15 @@
 import { Heading, VStack, Input } from "native-base";
-import React from "react";
+import React, { forwardRef } from "react";
 
-export const AuthInput = ({ label, isPassword, ...props }) => {
+export const AuthInput = forwardRef((props, ref) => {
     return (
         <>
             <Heading size={"xs"} fontWeight={800} mb={1}>
-                {label}
+                {props.label}
             </Heading>
             <Input
-                type={isPassword && "password"}
+                ref={ref}
+                type={props.isPassword && "password"}
                 borderRadius={0}
                 bg={"muted.200"}
                 borderColor={"transparent"}
@@ -18,4 +19,4 @@ export const AuthInput = ({ label, isPassword, ...props }) => {
             />
         </>
     );
-};
+});
