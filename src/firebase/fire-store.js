@@ -76,7 +76,6 @@ export const getAllItems = async (includeUser = true) => {
 };
 
 export const getFocusItemData = async (itemID) => {
-    console.log("Gettting " + itemID);
     const itemDocRef = doc(collection(Fire.store, "items"), itemID);
     const itemDoc = await getDoc(itemDocRef);
     const itemData = itemDoc.data();
@@ -85,7 +84,6 @@ export const getFocusItemData = async (itemID) => {
             uri: img,
         };
     });
-    console.log(itemData);
     const item = { ...itemData, itemID: itemDoc.id };
     return item;
 };
@@ -95,15 +93,11 @@ export const isItemLiked = async (itemID) => {
     const userDocRef = doc(collection(Fire.store, "users"), userID);
     const userDoc = await getDoc(userDocRef);
     const likes = userDoc.data().likedItems;
-    console.log("LIKES", likes);
-    console.log("INCLUDED", itemID, likes.includes(itemID));
     return likes != null && likes.includes(itemID);
 };
 
 export const toggleLiked = async (itemID) => {
-    console.log("ITEM ID", itemID);
     const isLiked = await isItemLiked(itemID);
-    console.log("IS LIKED", isLiked);
     const userID = store.getState().app.user?.userID;
     const userDocRef = doc(collection(Fire.store, "users"), userID);
     await updateDoc(userDocRef, {

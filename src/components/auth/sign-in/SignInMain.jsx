@@ -95,7 +95,6 @@ const SignInForm = () => {
     const handleSubmit = async () => {
         setLoading(true);
         await attemptSignIn(user).catch((e) => {
-            console.log(e.code, e.message);
             const errorDescription = {
                 "auth/wrong-password":
                     "Sorry, that password doesn't match. Please try again.",

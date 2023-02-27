@@ -38,9 +38,7 @@ const ExploreFocus = ({ route }) => {
     useEffect(() => {
         loadItemData();
     }, []);
-    useEffect(() => {
-        console.log(item);
-    }, [item]);
+
     return item ? (
         <Box flex={1} safeArea bg={"white"}>
             <FocusDisplay item={item} />
