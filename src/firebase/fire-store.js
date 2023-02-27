@@ -1,4 +1,6 @@
 import {
+    arrayRemove,
+    arrayUnion,
     collection,
     doc,
     getDoc,
@@ -84,6 +86,27 @@ export const getFocusItemData = async (itemID) => {
         };
     });
     console.log(itemData);
-    const item = { ...itemData };
+    const item = { ...itemData, itemID: itemDoc.id };
     return item;
+};
+
+export const isItemLiked = async (itemID) => {
+    const userID = store.getState().app.user?.userID;
+    const userDocRef = doc(collection(Fire.store, "users"), userID);
+    const userDoc = await getDoc(userDocRef);
+    const likes = userDoc.data().likedItems;
+    console.log("LIKES", likes);
+    console.log("INCLUDED", itemID, likes.includes(itemID));
+    return likes != null && likes.includes(itemID);
+};
+
+export const toggleLiked = async (itemID) => {
+    console.log("ITEM ID", itemID);
+    const isLiked = await isItemLiked(itemID);
+    console.log("IS LIKED", isLiked);
+    const userID = store.getState().app.user?.userID;
+    const userDocRef = doc(collection(Fire.store, "users"), userID);
+    await updateDoc(userDocRef, {
+        likedItems: isLiked ? arrayRemove(itemID) : arrayUnion(itemID),
+    });
 };

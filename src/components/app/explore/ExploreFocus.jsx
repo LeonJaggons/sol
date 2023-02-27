@@ -17,7 +17,11 @@ import {
     Divider,
 } from "native-base";
 import { ImageDisplay } from "../../util/ImageDisplay";
-import { getFocusItemData } from "../../../firebase/fire-store";
+import {
+    getFocusItemData,
+    isItemLiked,
+    toggleLiked,
+} from "../../../firebase/fire-store";
 import { Ionicons } from "react-native-vector-icons";
 import { getUserData } from "../../../firebase/fire-auth";
 import moment from "moment";
@@ -106,7 +110,7 @@ const FocusHeader = ({ item }) => {
                 <Heading size={"xl"}>{item.title}</Heading>
                 <CategorySlide item={item} single />
             </VStack>
-            <LikeButton />
+            <LikeButton item={item} />
         </HStack>
     );
 };
@@ -274,14 +278,38 @@ const FocusFooter = ({ item }) => {
     );
 };
 
-const LikeButton = () => {
+const LikeButton = ({ item }) => {
+    const [liked, setLiked] = useState();
+    const getInitLiked = async () => {
+        const initLiked = await isItemLiked(item.itemID);
+        setLiked(initLiked);
+    };
+
+    useEffect(() => {
+        getInitLiked();
+    }, []);
+
+    const handlePress = async () => {
+        if (liked != null) {
+            setLiked(!liked);
+            await toggleLiked(item.itemID);
+        }
+    };
     return (
         <IconButton
             borderRadius={0}
             size={"lg"}
-            variant={"ghost"}
+            variant={"unstyled"}
             colorScheme={"muted"}
-            icon={<Icon as={Ionicons} name={"heart-outline"} />}
+            onPress={handlePress}
+            icon={
+                <Icon
+                    as={Ionicons}
+                    name={"heart" + (liked ? "" : "-outline")}
+                    color={liked ? "red.500" : "muted.100"}
+                    size={"3xl"}
+                />
+            }
         />
     );
 };
