@@ -52,9 +52,10 @@ export const uploadProfileImg = async (userID, img) => {
 };
 
 export const attemptSignIn = async (userInfo) => {
+    console.log(userInfo);
     const res = await signInWithEmailAndPassword(
         Fire.auth,
-        userInfo.email,
+        userInfo.email.toLowerCase(),
         userInfo.password
     );
     if (res.user) {

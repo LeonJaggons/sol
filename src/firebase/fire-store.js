@@ -1,6 +1,7 @@
 import {
     collection,
     doc,
+    getDoc,
     getDocs,
     query,
     setDoc,
@@ -70,4 +71,19 @@ export const getAllItems = async (includeUser = true) => {
         }),
     ];
     return items;
+};
+
+export const getFocusItemData = async (itemID) => {
+    console.log("Gettting " + itemID);
+    const itemDocRef = doc(collection(Fire.store, "items"), itemID);
+    const itemDoc = await getDoc(itemDocRef);
+    const itemData = itemDoc.data();
+    itemData["imgs"] = itemData["imgs"].map((img) => {
+        return {
+            uri: img,
+        };
+    });
+    console.log(itemData);
+    const item = { ...itemData };
+    return item;
 };
