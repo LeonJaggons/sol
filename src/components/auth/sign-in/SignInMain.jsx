@@ -10,6 +10,10 @@ import {
     ScrollView,
     Center,
     Input,
+    Toast,
+    useToast,
+    Alert,
+    AlertDialog,
 } from "native-base";
 import { Ionicons } from "react-native-vector-icons";
 import React, { forwardRef, useEffect, useRef, useState } from "react";
@@ -87,10 +91,53 @@ const SignInForm = () => {
         updateCanSubmit();
     }, [user]);
 
+    const toast = useToast();
     const handleSubmit = async () => {
         setLoading(true);
         await attemptSignIn(user).catch((e) => {
-            console.log(e);
+            console.log(e.code, e.message);
+            const errorDescription = {
+                "auth/wrong-password":
+                    "Sorry, that password doesn't match. Please try again.",
+                "auth/too-many-requests": "Too many attempts, try again later.",
+                "auth/user-not-found":
+                    "No user found with that email address..",
+            };
+            toast.show({
+                render: () => {
+                    return (
+                        <Alert
+                            status={"error"}
+                            title={"Login Failed"}
+                            variant={"top-accent"}
+                        >
+                            <VStack space={2} flexShrink={1} w="100%">
+                                <HStack
+                                    flexShrink={1}
+                                    space={2}
+                                    justifyContent="space-between"
+                                >
+                                    <HStack space={4} flexShrink={1}>
+                                        <Alert.Icon mt="1" size={"lg"} />
+                                        <VStack>
+                                            <Text
+                                                fontSize="lg"
+                                                color="coolGray.800"
+                                                fontWeight={"bold"}
+                                            >
+                                                Login Failed
+                                            </Text>
+                                            <Text>
+                                                {errorDescription[[e.code]]}
+                                            </Text>
+                                        </VStack>
+                                    </HStack>
+                                </HStack>
+                            </VStack>
+                        </Alert>
+                    );
+                },
+            });
         });
         setLoading(false);
     };
