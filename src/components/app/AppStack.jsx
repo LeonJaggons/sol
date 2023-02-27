@@ -1,17 +1,19 @@
+import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Box, Heading } from "native-base";
 import { MaterialCommunityIcons } from "react-native-vector-icons";
-import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
 import Explore from "./explore/Explore";
 import Account from "./account/Account";
 import Post from "./post/Post";
-import { createStackNavigator } from "@react-navigation/stack";
 import CategoriesPanel from "../util/CategoriesPanel";
+import Listings from "./listings/Listings";
+
 const AppStack = () => {
     const Tabs = createBottomTabNavigator();
     const tabParams = [
         { name: "Explore", component: Explore, icon: "compass" },
-        { name: "Listings", component: Dummy, icon: "store" },
+        { name: "Listings", component: Listings, icon: "store" },
         { name: "Post", component: Post, icon: "tag" },
         { name: "Messages", component: Dummy, icon: "email" },
         { name: "Account", component: Account, icon: "account" },
