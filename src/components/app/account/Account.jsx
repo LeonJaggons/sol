@@ -21,7 +21,7 @@ const Account = () => {
             <HStack
                 alignItems={"center"}
                 justifyContent={"space-between"}
-                py={2}
+                p={2}
                 bg={"white"}
             >
                 <BackButton />
@@ -81,50 +81,50 @@ const AccountSection = ({ title, items }) => {
                 {title}
             </Heading>
             <VStack bg={"white"}>
-                {items.map((item) => (
-                    <Pressable
-                        onH
-                        _pressed={{
-                            bg: "muted.100",
-                        }}
-                    >
-                        <HStack py={2.5} px={4} alignItems={"center"}>
-                            <HStack flex={1} space={4} alignItems={"center"}>
-                                <Box
-                                    bg={"gray.200"}
-                                    borderRadius={"full"}
-                                    p={2}
-                                    style={{ aspectRatio: 1 }}
-                                >
-                                    <Icon
-                                        as={MaterialCommunityIcons}
-                                        name={item.icon}
-                                        color={"muted.900"}
-                                        size={"18px"}
-                                    />
-                                </Box>
-                                <Heading size={"xs"} fontWeight={600}>
-                                    {item.label}
-                                </Heading>
-                            </HStack>
-                            <IconButton
-                                pt={0}
-                                pb={0}
-                                pl={0}
-                                variant={"unstyled"}
-                                icon={
-                                    <Icon
-                                        as={Ionicons}
-                                        name={"chevron-forward"}
-                                    />
-                                }
-                                colorScheme={"muted"}
-                            />
-                        </HStack>
-                    </Pressable>
+                {items.map((item, i) => (
+                    <MenuItem key={"TITLE-" + i} item={item} />
                 ))}
             </VStack>
         </VStack>
+    );
+};
+
+const MenuItem = ({ item }) => {
+    return (
+        <Pressable
+            _pressed={{
+                bg: "muted.100",
+            }}
+        >
+            <HStack py={2.5} px={4} alignItems={"center"}>
+                <HStack flex={1} space={4} alignItems={"center"}>
+                    <Box
+                        bg={"gray.200"}
+                        borderRadius={"full"}
+                        p={2}
+                        style={{ aspectRatio: 1 }}
+                    >
+                        <Icon
+                            as={MaterialCommunityIcons}
+                            name={item.icon}
+                            color={"muted.900"}
+                            size={"18px"}
+                        />
+                    </Box>
+                    <Heading size={"xs"} fontWeight={600}>
+                        {item.label}
+                    </Heading>
+                </HStack>
+                <IconButton
+                    pt={0}
+                    pb={0}
+                    pl={0}
+                    variant={"unstyled"}
+                    icon={<Icon as={Ionicons} name={"chevron-forward"} />}
+                    colorScheme={"muted"}
+                />
+            </HStack>
+        </Pressable>
     );
 };
 
