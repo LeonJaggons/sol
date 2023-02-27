@@ -8,15 +8,17 @@ import {
     Menu,
     Pressable,
 } from "native-base";
+import { ImageBackground } from "react-native";
 
 export const ImageDisplay = ({ imgs }) => {
     return imgs.length === 0 ? (
         <></>
     ) : (
-        <VStack space={1}>
+        <VStack space={1} w={"full"} h={"350px"}>
             <Image
-                w={"100%"}
-                style={{ aspectRatio: 1 }}
+                w={null}
+                flex={1}
+                resizeMode={"cover"}
                 source={{ uri: imgs[0].uri }}
                 alt={"Main image"}
                 mb={1}
@@ -29,11 +31,12 @@ export const ImageDisplay = ({ imgs }) => {
                 p={2}
                 mx={4}
                 space={2}
+                alignSelf={"center"}
             >
                 <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                     <HStack space={2}>
                         {imgs.map((img, i) => (
-                            <SubImage img={img} i={i} key={img.id} />
+                            <SubImage img={img} i={i} key={"IMG-" + i} />
                         ))}
                     </HStack>
                 </ScrollView>
@@ -52,7 +55,7 @@ const SubImage = ({ img, i, full }) => {
                             alt={"Image " + i}
                             source={{ uri: img.uri }}
                             style={{ aspectRatio: 1 }}
-                            w={full ? "full" : "60px"}
+                            w={full ? "full" : "50px"}
                         />
                     </Pressable>
                 );

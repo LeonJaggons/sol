@@ -46,7 +46,7 @@ const PostStep = ({ title, children, canContinue, final, noBack, done }) => {
         }
     };
     return (
-        <Box flex={1} safeArea>
+        <Box flex={1} safeArea bg={"white"}>
             <HStack
                 alignItems={"center"}
                 justifyContent={"space-between"}

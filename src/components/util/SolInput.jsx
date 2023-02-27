@@ -5,6 +5,7 @@ import { Input, TextArea } from "native-base";
 const SolInput = forwardRef((props, ref) => {
     return (
         <Input
+            ref={ref}
             borderRadius={0}
             bg={"muted.200"}
             borderColor={"transparent"}
@@ -15,9 +16,10 @@ const SolInput = forwardRef((props, ref) => {
     );
 });
 
-export const SolTextArea = forwardRef((props) => {
+export const SolTextArea = forwardRef((props, ref) => {
     return (
         <TextArea
+            ref={ref}
             borderRadius={0}
             bg={"muted.200"}
             borderColor={"transparent"}

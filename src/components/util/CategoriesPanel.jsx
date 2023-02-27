@@ -43,7 +43,7 @@ const CategoriesPanel = () => {
         }
     };
     return (
-        <Box safeArea p={2}>
+        <Box safeArea p={2} bg={"white"}>
             <HStack alignItems={"center"} justifyContent={"space-between"}>
                 <BackButton></BackButton>
                 <Heading size={"md"}>Select a category</Heading>
