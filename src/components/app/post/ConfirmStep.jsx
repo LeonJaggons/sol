@@ -58,8 +58,6 @@ const ConfirmScreen = () => {
     const [posted, setPosted] = useState(false);
 
     const handleUpload = async () => {
-        console.log("Attempting publish");
-        console.log(postDetails);
         setPosted(false);
         const userID = user.userID;
         await publishItem(userID, postDetails);

@@ -87,10 +87,6 @@ const SignInForm = () => {
         updateCanSubmit();
     }, [user]);
 
-    useEffect(() => {
-        console.log(passwordRef);
-    }, [passwordRef]);
-
     const handleSubmit = async () => {
         setLoading(true);
         await attemptSignIn(user).catch((e) => {
