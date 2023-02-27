@@ -1,7 +1,9 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import ExploreFocus from "./ExploreFocus";
 import ExploreMain from "./ExploreMain";
+import ExploreSearch from "./ExploreSearch";
 
 const Explore = () => {
     const dispatch = useDispatch();
@@ -21,6 +23,8 @@ const Explore = () => {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name={"ExploreMain"} component={ExploreMain} />
+            <Stack.Screen name={"Explore Focus"} component={ExploreFocus} />
+            <Stack.Screen name={"Explore Search"} component={ExploreSearch} />
         </Stack.Navigator>
     );
 };
