@@ -19,6 +19,7 @@ import CategorySelect from "../../util/CategorySelect";
 import { useDispatch, useSelector } from "react-redux";
 import { Ionicons } from "react-native-vector-icons";
 import { find } from "lodash";
+import { Conditions } from "../../util/ItemConditions";
 const cities = require("../../util/ZipCities.json");
 const MainDetailsStep = () => {
     const postDetails = useSelector((state) => state.post.postDetails);
@@ -97,6 +98,7 @@ const MainDetailForm = () => {
 };
 
 const ConditionSelect = ({ submit }) => {
+    const conditions = Conditions;
     return (
         <HStack alignItems={"center"} bg={"muted.200"} p={2}>
             <Icon
@@ -117,11 +119,13 @@ const ConditionSelect = ({ submit }) => {
                 borderWidth={0}
                 dropdownIcon={<Box />}
             >
-                <Select.Item label={"New"} value={"NEW"} />
-                <Select.Item label={"Refurbished/Renewed"} value={"RENEWED"} />
-                <Select.Item label={"Open Box"} value={"OPEN_BOX"} />
-                <Select.Item label={"Fair"} value={"FAIR"} />
-                <Select.Item label={"Broken/For parts"} value={"BROKEN"} />
+                {conditions.map(({ name, code }) => (
+                    <Select.Item
+                        label={name}
+                        value={code}
+                        key={"COND-" + code}
+                    />
+                ))}
             </Select>
         </HStack>
     );

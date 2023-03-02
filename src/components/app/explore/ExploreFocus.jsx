@@ -26,6 +26,10 @@ import { Ionicons } from "react-native-vector-icons";
 import { getUserData } from "../../../firebase/fire-auth";
 import moment from "moment";
 import MapView, { MapMarker } from "react-native-maps";
+import { find } from "lodash";
+import { Conditions } from "../../util/ItemConditions";
+import { useIsFocused, useNavigation } from "@react-navigation/native";
+import BackButton from "../../util/BackButton";
 const ExploreFocus = ({ route }) => {
     const { itemID } = route.params;
     const [item, setItem] = useState();
@@ -35,12 +39,13 @@ const ExploreFocus = ({ route }) => {
         setItem({ ...itemData });
     };
 
+    const focused = useIsFocused();
     useEffect(() => {
         loadItemData();
-    }, []);
+    }, [focused]);
 
     return item ? (
-        <Box flex={1} safeArea bg={"white"}>
+        <Box flex={1} bg={"white"}>
             <FocusDisplay item={item} />
         </Box>
     ) : (
@@ -51,51 +56,59 @@ const ExploreFocus = ({ route }) => {
 };
 
 const FocusDisplay = ({ item }) => {
+    const condition = find(Conditions, (o) => (o.code = item.condition));
+    const conditionText = condition?.name;
     return (
         <VStack flex={1}>
-            <ScrollView
-                contentContainerStyle={{
-                    display: "flex",
-                    flexDirection: "column",
-                }}
-            >
-                <ImageDisplay imgs={item.imgs} />
-                <VStack space={4} p={3} py={1} pb={100}>
-                    <VStack space={2}>
-                        <FocusHeader item={item} />
-                        <Text color={"muted.500"} fontSize={"sm"}>
-                            Published on{" "}
-                            {moment(item.created.toDate()).format("M/D/Y")}
-                        </Text>
-                    </VStack>
-                    <Divider bg={"muted.100"} />
-                    <VStack space={1}>
-                        <Heading size={"md"}>Description</Heading>
-                        <Text fontSize={"sm"} color={"muted.600"}>
-                            {item.description}
-                        </Text>
-                    </VStack>
+            <Box flex={1}>
+                <ScrollView
+                    showsVerticalScrollIndicator={false}
+                    contentContainerStyle={{
+                        display: "flex",
+                        flexDirection: "column",
+                    }}
+                >
+                    <Box>
+                        <ImageDisplay imgs={item.imgs} />
+                    </Box>
+                    <VStack space={4} p={3} py={1} pb={100}>
+                        <VStack space={2}>
+                            <FocusHeader item={item} />
+                            <Text color={"muted.500"} fontSize={"sm"}>
+                                Published on{" "}
+                                {moment(item.created.toDate()).format("M/D/Y")}
+                            </Text>
+                        </VStack>
+                        <Divider bg={"muted.100"} />
 
-                    <Divider bg={"muted.100"} />
-                    <VStack space={1}>
-                        <Heading size={"md"}>Details</Heading>
-                        <HStack
-                            alignItems={"center"}
-                            justifyContent={"space-between"}
-                        >
-                            <Text fontSize={16}>Condition</Text>
-                            <Text fontSize={16}>{item.condition}</Text>
-                        </HStack>
+                        <VStack space={1}>
+                            <Heading size={"md"}>Description</Heading>
+                            <Text fontSize={"sm"} color={"muted.600"}>
+                                {item.description}
+                            </Text>
+                        </VStack>
+
+                        <Divider bg={"muted.100"} />
+                        <VStack space={1}>
+                            <Heading size={"md"}>Details</Heading>
+                            <HStack
+                                alignItems={"center"}
+                                justifyContent={"space-between"}
+                            >
+                                <Text fontSize={16}>Condition</Text>
+                                <Text fontSize={16}>{conditionText}</Text>
+                            </HStack>
+                        </VStack>
+                        <Divider bg={"muted.100"} />
+                        <VStack space={1}>
+                            <Heading size={"md"}>Seller Details</Heading>
+                            <SellerCard item={item} />
+                        </VStack>
+                        <Divider bg={"muted.100"} />
+                        <LocationSection item={item} />
                     </VStack>
-                    <Divider bg={"muted.100"} />
-                    <VStack space={1}>
-                        <Heading size={"md"}>Seller Details</Heading>
-                        <SellerCard item={item} />
-                    </VStack>
-                    <Divider bg={"muted.100"} />
-                    <LocationSection item={item} />
-                </VStack>
-            </ScrollView>
+                </ScrollView>
+            </Box>
             <FocusFooter item={item} />
         </VStack>
     );
@@ -231,6 +244,10 @@ const LocationSection = ({ item }) => {
 };
 
 const FocusFooter = ({ item }) => {
+    const nav = useNavigation();
+    const handleBack = () => {
+        nav.goBack();
+    };
     return (
         <HStack
             p={4}
@@ -242,16 +259,16 @@ const FocusFooter = ({ item }) => {
             alignSelf={"center"}
             bottom={0}
             bg={"white"}
-            space={2}
+            space={4}
         >
-            <VStack alignItems={"flex-end"} mr={1}>
-                <Heading size={"md"} fontWeight={"black"}>
-                    ${item.price}.00
-                </Heading>
-                <Text color={"muted.400"} fontSize={12}>
-                    Addtl Info
-                </Text>
-            </VStack>
+            <IconButton
+                onPress={handleBack}
+                variant={"ghost"}
+                colorScheme={"muted"}
+                icon={
+                    <Icon as={Ionicons} name={"chevron-back"} color={"black"} />
+                }
+            />
             {/* <Button
                 borderRadius={0}
                 bg={"transparent"}
@@ -272,6 +289,14 @@ const FocusFooter = ({ item }) => {
             >
                 Message Seller
             </Button>
+            <VStack alignItems={"flex-start"} mr={1}>
+                <Heading size={"md"} fontWeight={"black"}>
+                    ${item.price}.00
+                </Heading>
+                <Text color={"muted.400"} fontSize={12}>
+                    Addtl Info
+                </Text>
+            </VStack>
         </HStack>
     );
 };
@@ -283,9 +308,10 @@ const LikeButton = ({ item }) => {
         setLiked(initLiked);
     };
 
+    const focused = useIsFocused();
     useEffect(() => {
         getInitLiked();
-    }, []);
+    }, [focused]);
 
     const handlePress = async () => {
         if (liked != null) {
@@ -304,7 +330,7 @@ const LikeButton = ({ item }) => {
                 <Icon
                     as={Ionicons}
                     name={"heart" + (liked ? "" : "-outline")}
-                    color={liked ? "red.500" : "muted.100"}
+                    color={liked ? "red.500" : "muted.400"}
                     size={"3xl"}
                 />
             }

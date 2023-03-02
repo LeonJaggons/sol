@@ -46,8 +46,8 @@ const PostStep = ({ title, children, canContinue, final, noBack, done }) => {
         }
     };
     return (
-        <Box flex={1} safeArea bg={"white"}>
-            <HStack
+        <Box flex={1} bg={"white"}>
+            {/* <HStack
                 alignItems={"center"}
                 justifyContent={"space-between"}
                 m={2}
@@ -59,7 +59,7 @@ const PostStep = ({ title, children, canContinue, final, noBack, done }) => {
                 <Box opacity={0}>
                     <BackButton></BackButton>
                 </Box>
-            </HStack>
+            </HStack> */}
             <Box flex={1} m={final ? 0 : 2} mt={final ? 0 : 4}>
                 <ScrollView>{children}</ScrollView>
             </Box>

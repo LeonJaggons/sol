@@ -8,20 +8,20 @@ const Listings = () => {
     const Stack = createStackNavigator();
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-            <Stack.Screen name={"Listings"} component={ListingsMain} />
-            <Stack.Screen name={"Saved Listings"} component={SavedListings} />
+            <Stack.Screen name={"Your Listings"} component={ListingsMain} />
+            <Stack.Screen name={"Saved"} component={SavedListings} />
         </Stack.Navigator>
     );
 };
 
 const ListingsMain = () => {
     return (
-        <Box flex={1} safeAreaTop p={2}>
+        <Box flex={1} safeAreaTop p={2} bg={"white"}>
             <Heading>Listings</Heading>
             <HStack mt={2} columns={2} w={"full"} flexWrap={"wrap"}>
                 <ListingButton
                     label={"Saved Listings"}
-                    screenName={"Saved Listings"}
+                    screenName={"Saved"}
                     icon={"heart"}
                 />
                 <ListingButton label={"Saved Listings"} icon={"heart"} />
@@ -37,6 +37,7 @@ const ListingButton = ({ screenName, label, icon, ...props }) => {
     const handlePress = () => {
         screenName && nav.navigate(screenName);
     };
+
     return (
         <Box style={{ flexGrow: 1, flexShrink: 1, flexBasis: "50%" }} p={1}>
             <Button

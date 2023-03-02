@@ -1,12 +1,126 @@
-import { View, Text } from "react-native";
-import React from "react";
-import { Box, Heading } from "native-base";
-
+import React, { useEffect, useState } from "react";
+import {
+    Box,
+    Divider,
+    Heading,
+    HStack,
+    Image,
+    ScrollView,
+    VStack,
+    Text,
+    Icon,
+    Button,
+    Pressable,
+    Center,
+    Spinner,
+} from "native-base";
+import { getSavedListings, toggleLiked } from "../../../firebase/fire-store";
+import { Ionicons } from "react-native-vector-icons";
+import { createStackNavigator } from "@react-navigation/stack";
+import ExploreFocus from "../explore/ExploreFocus";
+import { useIsFocused, useNavigation } from "@react-navigation/native";
 const SavedListings = () => {
+    const Stack = createStackNavigator();
     return (
-        <Box flex={1} safeAreaTop p={2}>
-            <Heading>Saved Listings</Heading>
+        <Stack.Navigator>
+            <Stack.Screen name={"Saved Listings"} component={SavedMain} />
+            <Stack.Screen name={"Saved Item"} component={ExploreFocus} />
+        </Stack.Navigator>
+    );
+};
+
+const SavedMain = () => {
+    return (
+        <Box flex={1} p={2} bg={"white"}>
+            <SavedGallery />
         </Box>
+    );
+};
+
+const SavedGallery = () => {
+    const [items, setItems] = useState();
+    const loadSavedListings = async () => {
+        setItems(null);
+        const savedItems = await getSavedListings();
+        setItems([...savedItems]);
+    };
+
+    const focused = useIsFocused();
+    useEffect(() => {
+        loadSavedListings();
+    }, [focused]);
+
+    return !items ? (
+        <Center flex={1}>
+            <Spinner size={"lg"} color={"muted.600"} />
+        </Center>
+    ) : (
+        <Box mt={2} py={2}>
+            <ScrollView>
+                <VStack>
+                    {items.map((item) => (
+                        <SavedItem
+                            keys={"SAVED-" + item.itemID}
+                            item={item}
+                            reload={loadSavedListings}
+                            clear={() => setItems(null)}
+                        />
+                    ))}
+                </VStack>
+            </ScrollView>
+        </Box>
+    );
+};
+
+const SavedItem = ({ item, reload, clear }) => {
+    const nav = useNavigation();
+    const focusSaved = () => {
+        nav.navigate("Saved Item", { itemID: item.itemID });
+    };
+    const removeLiked = async () => {
+        clear();
+        await toggleLiked(item.itemID);
+        reload();
+    };
+    return (
+        <Pressable onPress={focusSaved}>
+            <HStack alignItems={"center"} justifyContent={"space-between"}>
+                <HStack space={3}>
+                    <Image
+                        source={{ uri: item.imgs[0] }}
+                        h={"60px"}
+                        style={{ aspectRatio: 1 }}
+                        borderRadius={5}
+                        alt={item.title}
+                    />
+                    <VStack alignItems={"start"}>
+                        <Text
+                            fontSize={16}
+                            fontWeight={600}
+                            color={"muted.800"}
+                        >
+                            {item.title}
+                        </Text>
+                        <Button
+                            onPress={removeLiked}
+                            variant={"link"}
+                            colorScheme={"muted"}
+                            p={0}
+                            _text={{
+                                fontSize: "md",
+                                fontWeight: 500,
+                                color: "muted.400",
+                            }}
+                        >
+                            Remove
+                        </Button>
+                    </VStack>
+                </HStack>
+                <Icon as={Ionicons} name={"chevron-forward"} size={"lg"} />
+            </HStack>
+
+            <Divider mt={3} bg={"muted.200"} />
+        </Pressable>
     );
 };
 

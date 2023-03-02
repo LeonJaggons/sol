@@ -3,12 +3,14 @@ import {
     arrayUnion,
     collection,
     doc,
+    Firestore,
     getDoc,
     getDocs,
     query,
     setDoc,
     Timestamp,
     updateDoc,
+    where,
 } from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { orderBy } from "lodash";
@@ -31,6 +33,7 @@ export const publishItem = async (userID, itemDetails) => {
     const docRef = doc(Fire.store, "items", itemID);
     await setDoc(docRef, {
         userID: userID,
+        itemID: itemID,
         ...itemDetails,
         created: Timestamp.now(),
     });
@@ -103,4 +106,24 @@ export const toggleLiked = async (itemID) => {
     await updateDoc(userDocRef, {
         likedItems: isLiked ? arrayRemove(itemID) : arrayUnion(itemID),
     });
+};
+
+export const getSavedListings = async () => {
+    const userID = store.getState().app.user?.userID;
+    const userDocRef = doc(collection(Fire.store, "users"), userID);
+    const userDoc = await getDoc(userDocRef);
+    const likes = userDoc.data().likedItems;
+
+    if (!likes || likes.length === 0) return [];
+    const likedQry = query(
+        collection(Fire.store, "items"),
+        where("itemID", "in", likes)
+    );
+    const likedItems = await getDocs(likedQry);
+    const items = likedItems.docs.map((dc) => {
+        return {
+            ...dc.data(),
+        };
+    });
+    return [...items];
 };
