@@ -19,7 +19,7 @@ import {
 import { ImageDisplay } from "../../util/ImageDisplay";
 import {
     addViewed,
-    getFocusItemData,
+    getItemData,
     isItemLiked,
     toggleLiked,
 } from "../../../firebase/fire-store";
@@ -37,7 +37,7 @@ const ExploreFocus = ({ route }) => {
     const [item, setItem] = useState();
 
     const loadItemData = async () => {
-        const itemData = await getFocusItemData(itemID);
+        const itemData = await getItemData(itemID);
         setItem({ ...itemData });
     };
 
@@ -74,7 +74,7 @@ const FocusDisplay = ({ item }) => {
                     }}
                 >
                     <Box>
-                        <ImageDisplay imgs={item.imgs} />
+                        <ImageDisplay imgs={item.imgs} isViewer />
                     </Box>
                     <VStack space={4} p={3} py={1} pb={100}>
                         <VStack space={2}>
