@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import {
     Box,
     Divider,
@@ -18,7 +18,12 @@ import { getSavedListings, toggleLiked } from "../../../firebase/fire-store";
 import { Ionicons } from "react-native-vector-icons";
 import { createStackNavigator } from "@react-navigation/stack";
 import ExploreFocus from "../explore/ExploreFocus";
-import { useIsFocused, useNavigation } from "@react-navigation/native";
+import {
+    useFocusEffect,
+    useIsFocused,
+    useNavigation,
+} from "@react-navigation/native";
+import { v4 } from "uuid";
 const SavedListings = () => {
     const Stack = createStackNavigator();
     return (
@@ -45,10 +50,14 @@ const SavedGallery = () => {
         setItems([...savedItems]);
     };
 
-    const focused = useIsFocused();
-    useEffect(() => {
-        loadSavedListings();
-    }, [focused]);
+    const clear = () => {
+        setItems(null);
+    };
+    useFocusEffect(
+        useCallback(() => {
+            loadSavedListings();
+        }, [])
+    );
 
     return !items ? (
         <Center flex={1}>
@@ -60,10 +69,10 @@ const SavedGallery = () => {
                 <VStack>
                     {items.map((item) => (
                         <SavedItem
-                            keys={"SAVED-" + item.itemID}
+                            key={item.itemID}
                             item={item}
                             reload={loadSavedListings}
-                            clear={() => setItems(null)}
+                            clear={clear}
                         />
                     ))}
                 </VStack>
@@ -87,19 +96,19 @@ const SavedItem = ({ item, reload, clear }) => {
             <HStack alignItems={"center"} justifyContent={"space-between"}>
                 <HStack space={3}>
                     <Image
-                        source={{ uri: item.imgs[0] }}
+                        source={{ uri: item?.imgs[0] }}
                         h={"60px"}
                         style={{ aspectRatio: 1 }}
                         borderRadius={5}
-                        alt={item.title}
+                        alt={item?.title}
                     />
-                    <VStack alignItems={"start"}>
+                    <VStack alignItems={"flex-start"}>
                         <Text
                             fontSize={16}
                             fontWeight={600}
                             color={"muted.800"}
                         >
-                            {item.title}
+                            {item?.title}
                         </Text>
                         <Button
                             onPress={removeLiked}
@@ -118,7 +127,6 @@ const SavedItem = ({ item, reload, clear }) => {
                 </HStack>
                 <Icon as={Ionicons} name={"chevron-forward"} size={"lg"} />
             </HStack>
-
             <Divider mt={3} bg={"muted.200"} />
         </Pressable>
     );
