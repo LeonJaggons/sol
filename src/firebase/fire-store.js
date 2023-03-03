@@ -80,7 +80,7 @@ export const getAllItems = async (includeUser = true) => {
     return items;
 };
 
-export const getFocusItemData = async (itemID) => {
+export const getItemData = async (itemID) => {
     const itemDocRef = doc(collection(Fire.store, "items"), itemID);
     const itemDoc = await getDoc(itemDocRef);
     const itemData = itemDoc.data();
@@ -178,6 +178,28 @@ const createMessageID = () => {
     return id;
 };
 
+export const sendMessage = async (
+    senderID,
+    recipientID,
+    chainID,
+    itemID,
+    content
+) => {
+    const message = {
+        chainID: chainID,
+        content: content,
+        recipientID: recipientID,
+        senderID: senderID,
+        participants: [senderID, recipientID],
+        itemID: itemID,
+        created: Timestamp.now(),
+    };
+    const msgID = createMessageID();
+    const msgDocRef = doc(collection(Fire.store, "messages"), msgID);
+    await setDoc(msgDocRef, {
+        ...message,
+    });
+};
 export const sendFirstMessage = async (item, content) => {
     // chain id = ITEM_ID + ITEM_SELLER_ID + ITEM_BUYER_ID
     const userID = store.getState().app.user?.userID;
@@ -221,7 +243,7 @@ export const subscribeUserMessages = () => {
         const messages = {};
         const latestMessages = {};
         snap.docs.map((msgDoc) => {
-            const msg = msgDoc.data();
+            const msg = { id: msgDoc.id, ...msgDoc.data() };
             let currMessages = messages[[msg.chainID]];
             let latestMessage = latestMessages[[msg.chainID]];
             if (!currMessages) {
@@ -243,8 +265,6 @@ export const subscribeUserMessages = () => {
             latestMessages[[msg.chainID]] = latestMessage;
             messages[[msg.chainID]] = currMessages;
         });
-        console.log("MESSAGE", messages);
-        console.log("LATEST", latestMessages);
         store.dispatch({
             type: "SET",
             attr: "allMessages",
@@ -252,7 +272,7 @@ export const subscribeUserMessages = () => {
         });
         store.dispatch({
             type: "SET",
-            attr: "lastestMessages",
+            attr: "latestMessages",
             payload: { ...latestMessages },
         });
     });
