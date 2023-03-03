@@ -21,14 +21,13 @@ import { useIsFocused, useNavigation } from "@react-navigation/native";
 
 const ExploreMain = () => {
     return (
-        <Box safeArea p={1} flex={1} bg={"white"}>
+        <Box safeArea p={2} flex={1} bg={"white"}>
             <Heading>Marketplace</Heading>
             <SolInput
                 placeholder={"Search Sol items..."}
                 size={"lg"}
-                mx={"2px"}
-                mb={1}
-                mt={2}
+                m={"2px"}
+                my={2}
                 InputLeftElement={<Icon ml={3} as={Ionicons} name={"search"} />}
             />
             <ExploreGallery />
