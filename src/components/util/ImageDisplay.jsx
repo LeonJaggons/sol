@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
     HStack,
     Image,
@@ -10,7 +10,11 @@ import {
 } from "native-base";
 import { ImageBackground } from "react-native";
 
-export const ImageDisplay = ({ imgs }) => {
+export const ImageDisplay = ({ imgs, isViewer }) => {
+    const [currImg, setCurrImg] = useState();
+    useEffect(() => {
+        imgs && imgs.length > 0 && setCurrImg(imgs[0].uri);
+    }, [imgs]);
     return imgs.length === 0 ? (
         <></>
     ) : (
@@ -19,7 +23,7 @@ export const ImageDisplay = ({ imgs }) => {
                 w={null}
                 flex={1}
                 resizeMode={"cover"}
-                source={{ uri: imgs[0].uri }}
+                source={{ uri: currImg }}
                 alt={"Main image"}
                 mb={1}
                 key={"MAIN_IMG"}
@@ -32,11 +36,18 @@ export const ImageDisplay = ({ imgs }) => {
                 mx={4}
                 space={2}
                 alignSelf={"center"}
+                borderRadius={5}
             >
                 <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                     <HStack space={2}>
                         {imgs.map((img, i) => (
-                            <SubImage img={img} i={i} key={"IMG-" + i} />
+                            <SubImage
+                                setImg={setCurrImg}
+                                img={img}
+                                i={i}
+                                key={"IMG-" + i}
+                                readOnly={isViewer}
+                            />
                         ))}
                     </HStack>
                 </ScrollView>
@@ -45,18 +56,31 @@ export const ImageDisplay = ({ imgs }) => {
     );
 };
 
-const SubImage = ({ img, i, full }) => {
+const CoreImage = ({ img, full }) => {
     return (
+        <Image
+            alt={img.uri}
+            source={{ uri: img.uri }}
+            style={{ aspectRatio: 1 }}
+            w={full ? "full" : "50px"}
+            borderRadius={5}
+        />
+    );
+};
+const SubImage = ({ img, i, full, readOnly, setImg }) => {
+    const handlePress = () => {
+        setImg(img.uri);
+    };
+    return readOnly ? (
+        <Pressable onPress={handlePress} _pressed={{ opacity: 0.5 }}>
+            <CoreImage img={img} full={full} />
+        </Pressable>
+    ) : (
         <Menu
             trigger={(triggerProps) => {
                 return (
                     <Pressable key={img.id} {...triggerProps}>
-                        <Image
-                            alt={"Image " + i}
-                            source={{ uri: img.uri }}
-                            style={{ aspectRatio: 1 }}
-                            w={full ? "full" : "50px"}
-                        />
+                        <CoreImage img={img} full={full} />
                     </Pressable>
                 );
             }}
