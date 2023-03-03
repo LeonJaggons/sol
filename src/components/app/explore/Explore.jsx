@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import ExploreFocus from "./ExploreFocus";
 import ExploreMain from "./ExploreMain";
 import ExploreSearch from "./ExploreSearch";
+import MessageSeller from "./MessageSeller";
 
 const Explore = () => {
     const dispatch = useDispatch();
@@ -25,6 +26,11 @@ const Explore = () => {
             <Stack.Screen name={"ExploreMain"} component={ExploreMain} />
             <Stack.Screen name={"Explore Focus"} component={ExploreFocus} />
             <Stack.Screen name={"Explore Search"} component={ExploreSearch} />
+            <Stack.Screen
+                name={"Message"}
+                component={MessageSeller}
+                options={{ headerShown: true }}
+            />
         </Stack.Navigator>
     );
 };
