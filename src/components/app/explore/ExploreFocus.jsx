@@ -18,6 +18,7 @@ import {
 } from "native-base";
 import { ImageDisplay } from "../../util/ImageDisplay";
 import {
+    addViewed,
     getFocusItemData,
     isItemLiked,
     toggleLiked,
@@ -30,6 +31,7 @@ import { find } from "lodash";
 import { Conditions } from "../../util/ItemConditions";
 import { useIsFocused, useNavigation } from "@react-navigation/native";
 import BackButton from "../../util/BackButton";
+import { useDispatch, useSelector } from "react-redux";
 const ExploreFocus = ({ route }) => {
     const { itemID } = route.params;
     const [item, setItem] = useState();
@@ -41,7 +43,10 @@ const ExploreFocus = ({ route }) => {
 
     const focused = useIsFocused();
     useEffect(() => {
-        loadItemData();
+        if (focused) {
+            loadItemData();
+            addViewed(itemID);
+        }
     }, [focused]);
 
     return item ? (
@@ -127,6 +132,7 @@ const FocusHeader = ({ item }) => {
 };
 
 const SellerCard = ({ item }) => {
+    const dispatch = useDispatch();
     const [seller, setSeller] = useState();
     const loadSellerData = async () => {
         const sellerUserID = item.userID;
@@ -244,9 +250,19 @@ const LocationSection = ({ item }) => {
 };
 
 const FocusFooter = ({ item }) => {
+    const user = useSelector((state) => state.app.user);
     const nav = useNavigation();
     const handleBack = () => {
         nav.goBack();
+    };
+
+    const handleMessage = () => {
+        return nav.navigate("Message", {
+            sellerID: item.userID,
+            title: item.title,
+            img: item.imgs[0],
+            item: item,
+        });
     };
     return (
         <HStack
@@ -285,7 +301,9 @@ const FocusFooter = ({ item }) => {
                 bg={"black"}
                 _text={{ fontWeight: "bold" }}
                 flex={1}
+                isDisabled={item.userID === user.userID}
                 leftIcon={<Icon as={Ionicons} name={"chatbubble-ellipses"} />}
+                onPress={handleMessage}
             >
                 Message Seller
             </Button>
