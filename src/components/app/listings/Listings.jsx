@@ -10,6 +10,7 @@ const Listings = () => {
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name={"Your Listings"} component={ListingsMain} />
             <Stack.Screen name={"Saved"} component={SavedListings} />
+            {/* <Stack.Screen name={"Viewed"} component={RecentlyViewed} /> */}
         </Stack.Navigator>
     );
 };
@@ -24,9 +25,6 @@ const ListingsMain = () => {
                     screenName={"Saved"}
                     icon={"heart"}
                 />
-                <ListingButton label={"Saved Listings"} icon={"heart"} />
-                <ListingButton label={"Saved Listings"} icon={"heart"} />
-                <ListingButton label={"Saved Listings"} icon={"heart"} />
             </HStack>
         </Box>
     );
