@@ -17,8 +17,8 @@ import BackButton from "../../util/BackButton";
 import { Ionicons, MaterialCommunityIcons } from "react-native-vector-icons";
 const Account = () => {
     return (
-        <Box safeArea>
-            <HStack
+        <Box flex={1} bg={"white"}>
+            {/* <HStack
                 alignItems={"center"}
                 justifyContent={"space-between"}
                 p={2}
@@ -29,11 +29,9 @@ const Account = () => {
                 <Box opacity={0}>
                     <BackButton />
                 </Box>
-            </HStack>
+            </HStack> */}
             <ScrollView showsVerticalScrollIndicator={false}>
                 <AccountHeaderCard />
-                <ListingsSection />
-                <SavesSection />
                 <ProfileSection />
                 <NotificationsSection />
             </ScrollView>
@@ -51,6 +49,7 @@ const AccountHeaderCard = () => {
             bg={"white"}
             py={4}
             px={2}
+            pr={4}
         >
             <Avatar
                 size={"md"}
@@ -58,16 +57,22 @@ const AccountHeaderCard = () => {
                 borderWidth={2}
                 borderColor={"white"}
             />
-            <VStack justifyContent={"space-around"} flex={1}>
+            <VStack justifyContent={"space-between"} flex={1}>
                 <Text color={"muted.400"} fontWeight={500}>
                     Welcome
                 </Text>
-                <Heading size={"sm"}>
+                <Heading size={"md"}>
                     {user.firstName + " " + user.lastName}
                 </Heading>
             </VStack>
             <IconButton
-                icon={<Icon as={Ionicons} name={"chevron-forward"} />}
+                icon={
+                    <Icon
+                        as={Ionicons}
+                        name={"chevron-forward"}
+                        color={"black"}
+                    />
+                }
                 colorScheme={"muted"}
             />
         </HStack>
@@ -77,9 +82,11 @@ const AccountHeaderCard = () => {
 const AccountSection = ({ title, items }) => {
     return (
         <VStack>
-            <Heading size={"sm"} p={4} py={2} color={"muted.800"}>
-                {title}
-            </Heading>
+            <HStack bg={"muted.100"}>
+                <Heading size={"md"} p={4} py={2} color={"muted.800"}>
+                    {title}
+                </Heading>
+            </HStack>
             <VStack bg={"white"}>
                 {items.map((item, i) => (
                     <MenuItem key={"TITLE-" + i} item={item} />
@@ -108,7 +115,7 @@ const MenuItem = ({ item }) => {
                             as={MaterialCommunityIcons}
                             name={item.icon}
                             color={"muted.900"}
-                            size={"18px"}
+                            size={"19px"}
                         />
                     </Box>
                     <Heading size={"xs"} fontWeight={600}>
