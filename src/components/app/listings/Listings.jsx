@@ -4,13 +4,14 @@ import { Box, Button, Heading, HStack, Icon, Text, VStack } from "native-base";
 import { useNavigation } from "@react-navigation/native";
 import { Ionicons } from "react-native-vector-icons";
 import SavedListings from "./SavedListings";
+import RecentlyViewed from "./RecentlyViewed";
 const Listings = () => {
     const Stack = createStackNavigator();
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name={"Your Listings"} component={ListingsMain} />
             <Stack.Screen name={"Saved"} component={SavedListings} />
-            {/* <Stack.Screen name={"Viewed"} component={RecentlyViewed} /> */}
+            <Stack.Screen name={"Viewed"} component={RecentlyViewed} />
         </Stack.Navigator>
     );
 };
@@ -24,6 +25,11 @@ const ListingsMain = () => {
                     label={"Saved Listings"}
                     screenName={"Saved"}
                     icon={"heart"}
+                />
+                <ListingButton
+                    label={"Recently Viewed"}
+                    screenName={"Viewed"}
+                    icon={"time"}
                 />
             </HStack>
         </Box>
