@@ -1,10 +1,8 @@
-const appState = {
-    appTitle: "Sol",
-    user: {},
-    currSeller: {},
+const messagesState = {
+    allMessages: {},
+    latestMessages: {},
 };
-
-const appReducer = (state = appState, action) => {
+const messagesReducer = (state = messagesState, action) => {
     switch (action.type) {
         case "SET":
             return {
@@ -17,4 +15,5 @@ const appReducer = (state = appState, action) => {
             };
     }
 };
-export default appReducer;
+
+export default messagesReducer;

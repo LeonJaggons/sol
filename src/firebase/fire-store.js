@@ -3,9 +3,9 @@ import {
     arrayUnion,
     collection,
     doc,
-    Firestore,
     getDoc,
     getDocs,
+    onSnapshot,
     query,
     setDoc,
     Timestamp,
@@ -13,7 +13,9 @@ import {
     where,
 } from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { orderBy } from "lodash";
+import { filter, orderBy, update } from "lodash";
+import moment from "moment";
+import { v4 } from "uuid";
 import store from "../redux/store";
 import Fire from "./firebase-init";
 
@@ -32,8 +34,8 @@ export const publishItem = async (userID, itemDetails) => {
     const itemID = createItemID();
     const docRef = doc(Fire.store, "items", itemID);
     await setDoc(docRef, {
-        userID: userID,
         itemID: itemID,
+        userID: userID,
         ...itemDetails,
         created: Timestamp.now(),
     });
@@ -126,4 +128,133 @@ export const getSavedListings = async () => {
         };
     });
     return [...items];
+};
+
+export const addViewed = async (itemID) => {
+    const userID = store.getState().app.user?.userID;
+    const userDocRef = doc(collection(Fire.store, "users"), userID);
+    const userDoc = await getDoc(userDocRef);
+    const viewed = userDoc.data().recentlyViewed;
+
+    if (!viewed || viewed.length === 0) {
+        await updateDoc(userDocRef, {
+            recentlyViewed: [itemID],
+        });
+    } else {
+        let filtered = filter(viewed, (o) => o !== itemID);
+        let newViewed = [itemID, ...filtered];
+        await updateDoc(userDocRef, {
+            recentlyViewed: newViewed,
+        });
+    }
+};
+
+export const getViewedListings = async () => {
+    const userID = store.getState().app.user?.userID;
+    const userDocRef = doc(collection(Fire.store, "users"), userID);
+    const userDoc = await getDoc(userDocRef);
+    const viewed = userDoc.data().recentlyViewed;
+
+    if (!viewed || viewed.length === 0) return [];
+    const viewedQry = query(
+        collection(Fire.store, "items"),
+        where("itemID", "in", viewed)
+    );
+    const viewedItems = await getDocs(viewedQry);
+    const items = viewedItems.docs.map((dc) => {
+        return {
+            ...dc.data(),
+        };
+    });
+    return [...items];
+};
+
+const createMessageID = () => {
+    let id = "MSG-";
+    for (let i = 0; i < 8; i++) {
+        let curr = Math.floor(Math.random() * 10);
+        id += curr;
+    }
+    return id;
+};
+
+export const sendFirstMessage = async (item, content) => {
+    // chain id = ITEM_ID + ITEM_SELLER_ID + ITEM_BUYER_ID
+    const userID = store.getState().app.user?.userID;
+    const itemID = item.itemID;
+    const sellerID = item.userID;
+    const buyerID = userID;
+
+    const chainID = itemID + "&" + sellerID + "&" + buyerID;
+    const msgID = createMessageID();
+    const message = {
+        chainID: chainID,
+        content: content,
+        recipientID: sellerID,
+        senderID: userID,
+        participants: [userID, sellerID],
+        itemID: itemID,
+        created: Timestamp.now(),
+    };
+
+    const msgDocRef = doc(collection(Fire.store, "messages"), msgID);
+    await updateDoc(doc(Fire.store, "users", userID), {
+        messageChains: arrayUnion(chainID),
+    });
+    await updateDoc(doc(Fire.store, "users", sellerID), {
+        messageChains: arrayUnion(chainID),
+    });
+    await setDoc(msgDocRef, {
+        ...message,
+    });
+};
+
+export const subscribeUserMessages = () => {
+    const userID = store.getState().app.user?.userID;
+
+    const msgQry = query(
+        collection(Fire.store, "messages"),
+        where("participants", "array-contains", userID)
+    );
+
+    const unsub = onSnapshot(msgQry, (snap) => {
+        const messages = {};
+        const latestMessages = {};
+        snap.docs.map((msgDoc) => {
+            const msg = msgDoc.data();
+            let currMessages = messages[[msg.chainID]];
+            let latestMessage = latestMessages[[msg.chainID]];
+            if (!currMessages) {
+                currMessages = [msg];
+            } else {
+                currMessages.push(msg);
+            }
+
+            if (!latestMessage) {
+                latestMessage = msg;
+            } else {
+                const prevMsgDate = moment(latestMessage.created.toDate());
+                const currMsgDate = moment(msg.created.toDate());
+
+                if (currMsgDate.isAfter(prevMsgDate, "second")) {
+                    latestMessage = msg;
+                }
+            }
+            latestMessages[[msg.chainID]] = latestMessage;
+            messages[[msg.chainID]] = currMessages;
+        });
+        console.log("MESSAGE", messages);
+        console.log("LATEST", latestMessages);
+        store.dispatch({
+            type: "SET",
+            attr: "allMessages",
+            payload: { ...messages },
+        });
+        store.dispatch({
+            type: "SET",
+            attr: "lastestMessages",
+            payload: { ...latestMessages },
+        });
+    });
+    return unsub;
 };
